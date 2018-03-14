@@ -25,7 +25,11 @@ public class Updater {
                 Double doubleBarCode = row.getCell(6).getNumericCellValue();
                 System.out.println("doubleBarCode : " + String.format("%.0f",doubleBarCode));
 
-                if(row.getCell(0) != null ) {
+                Double quantity = 0.0;
+                if(row.getCell(1) != null && row.getCell(1).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+                    quantity = row.getCell(1).getNumericCellValue();
+                }
+                if(row.getCell(0) != null && quantity > 0) {
                     productsVariants.insertRow(row);
                 }
 

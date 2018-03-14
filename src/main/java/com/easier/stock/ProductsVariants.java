@@ -100,9 +100,13 @@ public class ProductsVariants {
 
         String priceString = String.format("%.0f", price);
 
-            Double quantity =row.getCell(1).getNumericCellValue(); //quantity
-            String quantityString = String.format("%.0f", quantity);
-            System.out.println("quantityString  : " + quantityString);
+        Double quantity = 0.0;
+        if(row.getCell(1) != null && row.getCell(1).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+            quantity = row.getCell(1).getNumericCellValue();
+        }
+
+        String quantityString = String.format("%.0f", quantity);
+        System.out.println("quantityString  : " + quantityString);
 
 
 

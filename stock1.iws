@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="730793f8-0c52-4036-b47a-297214275d30" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/App.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/ConnectionDB.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/ExcelParcer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/GenProductsVariantsJSON.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/Product.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/ProductInStock.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/ProductsVariants.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/StructureColumns$ColumnsInStock.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/StructureColumns.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/Updater.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/com/easier/stock/AppTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.ideaDataSources/343be897-9a60-4422-b0c7-5f11693e2d81.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stock1.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ideaDataSources/343be897-9a60-4422-b0c7-5f11693e2d81.xml" afterPath="$PROJECT_DIR$/.ideaDataSources/343be897-9a60-4422-b0c7-5f11693e2d81.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stock1.iml" afterPath="$PROJECT_DIR$/stock1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stock1.ipr" afterPath="$PROJECT_DIR$/stock1.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stock1.iws" afterPath="$PROJECT_DIR$/stock1.iws" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,6 +43,12 @@
         <item name="tatonka@192.168.1.69" type="e3449647:DbNodeDescriptor" />
         <item name="tatonka" type="e3449647:DbNodeDescriptor" />
       </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="tatonka@192.168.1.69" type="e3449647:DbNodeDescriptor" />
+        <item name="tatonka" type="e3449647:DbNodeDescriptor" />
+        <item name="SS_products_variants" type="e3449647:DbNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
@@ -70,8 +57,8 @@
       <file leaf-file-name="UpdaterFascade.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+            <state relative-caret-position="367">
+              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#UpdaterPriceLasting#0;class#UpdaterFascade#0" expanded="false" />
@@ -92,8 +79,8 @@
       <file leaf-file-name="GenProductsVariantsJSON.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/GenProductsVariantsJSON.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="663">
+              <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="35" />
               <folding>
                 <element signature="e#381#382#0" expanded="true" />
                 <element signature="e#437#438#0" expanded="true" />
@@ -106,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,17 +101,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductsVariants.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductsVariants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="102" column="8" lean-forward="false" selection-start-line="102" selection-start-column="8" selection-end-line="105" selection-end-column="9" />
               <folding>
-                <marker date="1521025287744" expanded="true" signature="458:518" ph="SELECT * FRO... SS_products_variants" />
-                <marker date="1521025287744" expanded="true" signature="725:810" ph="SELECT * FRO... SS_products_variants" />
-                <marker date="1521025287744" expanded="true" signature="948:1021" ph="UPDATE SS_pr... " />
-                <marker date="1521025287744" expanded="true" signature="1441:1532" ph="UPDATE SS_pr... " />
-                <marker date="1521025287744" expanded="true" signature="4626:4761" ph="INSERT INTO SS_products_variants... " />
+                <marker date="1521025610639" expanded="true" signature="458:518" ph="SELECT * FRO... SS_products_variants" />
+                <marker date="1521025610639" expanded="true" signature="725:810" ph="SELECT * FRO... SS_products_variants" />
+                <marker date="1521025610639" expanded="true" signature="948:1021" ph="UPDATE SS_pr... " />
+                <marker date="1521025610639" expanded="true" signature="1441:1532" ph="UPDATE SS_pr... " />
+                <marker date="1521025610639" expanded="true" signature="4741:4876" ph="INSERT INTO SS_products_variants... " />
               </folding>
             </state>
           </provider>
@@ -133,13 +120,23 @@
       <file leaf-file-name="Updater.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="417">
+              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#priceLasting#0;class#Updater#0" expanded="false" />
                 <element signature="method#onlyQuantity#0;class#Updater#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/343be897-9a60-4422-b0c7-5f11693e2d81/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="92" lean-forward="true" selection-start-line="0" selection-start-column="92" selection-end-line="0" selection-end-column="92" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -223,9 +220,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/343be897-9a60-4422-b0c7-5f11693e2d81/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java" />
       </list>
     </option>
   </component>
@@ -514,12 +511,20 @@
       <workItem from="1512724168206" duration="5476000" />
       <workItem from="1516173066557" duration="1770000" />
       <workItem from="1518002666016" duration="1843000" />
-      <workItem from="1521022369183" duration="2464000" />
+      <workItem from="1521022369183" duration="6858000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed bug">
+      <created>1521025337484</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521025337485</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134698000" />
+    <option name="totallyTimeSpent" value="139092000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,11 +554,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47122693" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5124864" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36482084" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51140064" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2790445" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19829424" sideWeight="0.27272728" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.752443" sideWeight="0.48347548" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19989339" sideWeight="0.7275902" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19829424" sideWeight="0.27240977" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -566,7 +572,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1337953" sideWeight="0.509901" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.752443" sideWeight="0.48347548" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -649,6 +654,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -957,14 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/343be897-9a60-4422-b0c7-5f11693e2d81/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="72" lean-forward="false" selection-start-line="0" selection-start-column="72" selection-end-line="0" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/stock132247a6b/343be897-9a60-4422-b0c7-5f11693e2d81/tatonka.SS_products">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -980,22 +981,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#priceLasting#0;class#Updater#0" expanded="false" />
-            <element signature="method#onlyQuantity#0;class#Updater#0" expanded="false" />
-          </folding>
+    <entry file="das://table:/stock132247a6b/343be897-9a60-4422-b0c7-5f11693e2d81/tatonka.SS_products_variants">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/GenProductsVariantsJSON.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="663">
+          <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="35" />
           <folding>
             <element signature="e#381#382#0" expanded="true" />
             <element signature="e#437#438#0" expanded="true" />
@@ -1005,8 +1001,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+        <state relative-caret-position="367">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#UpdaterPriceLasting#0;class#UpdaterFascade#0" expanded="false" />
@@ -1014,34 +1010,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/stock132247a6b/343be897-9a60-4422-b0c7-5f11693e2d81/tatonka.SS_products_variants">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="102" column="8" lean-forward="false" selection-start-line="102" selection-start-column="8" selection-end-line="105" selection-end-column="9" />
+          <folding>
+            <marker date="1521025610639" expanded="true" signature="458:518" ph="SELECT * FRO... SS_products_variants" />
+            <marker date="1521025610639" expanded="true" signature="725:810" ph="SELECT * FRO... SS_products_variants" />
+            <marker date="1521025610639" expanded="true" signature="948:1021" ph="UPDATE SS_pr... " />
+            <marker date="1521025610639" expanded="true" signature="1441:1532" ph="UPDATE SS_pr... " />
+            <marker date="1521025610639" expanded="true" signature="4741:4876" ph="INSERT INTO SS_products_variants... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#priceLasting#0;class#Updater#0" expanded="false" />
+            <element signature="method#onlyQuantity#0;class#Updater#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/343be897-9a60-4422-b0c7-5f11693e2d81/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <marker date="1521025287744" expanded="true" signature="458:518" ph="SELECT * FRO... SS_products_variants" />
-            <marker date="1521025287744" expanded="true" signature="725:810" ph="SELECT * FRO... SS_products_variants" />
-            <marker date="1521025287744" expanded="true" signature="948:1021" ph="UPDATE SS_pr... " />
-            <marker date="1521025287744" expanded="true" signature="1441:1532" ph="UPDATE SS_pr... " />
-            <marker date="1521025287744" expanded="true" signature="4626:4761" ph="INSERT INTO SS_products_variants... " />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="92" lean-forward="true" selection-start-line="0" selection-start-column="92" selection-end-line="0" selection-end-column="92" />
+          <folding />
         </state>
       </provider>
     </entry>
