@@ -93,10 +93,12 @@ public class ProductsVariants {
 //        Double inStockInFile = row.getCell(1).getNumericCellValue();
 //        String inStockInFileString = String.format("%.0f", inStockInFile);
 
+        Double price = 0.0;
+        if(row.getCell(4) != null && row.getCell(4).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+            price = row.getCell(4).getNumericCellValue();
+        }
 
-
-            Double price = row.getCell(4).getNumericCellValue();
-            String priceString = String.format("%.0f", price);
+        String priceString = String.format("%.0f", price);
 
             Double quantity =row.getCell(1).getNumericCellValue(); //quantity
             String quantityString = String.format("%.0f", quantity);

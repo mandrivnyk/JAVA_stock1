@@ -3,10 +3,7 @@ package com.easier.stock;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Updater {
@@ -20,32 +17,41 @@ public class Updater {
         this.conn = new ConnectionDB(1).getConn();
     }
 
-    public void process() throws SQLException {
+    public void innerStock() throws SQLException {
         ProductsVariants productsVariants = new ProductsVariants();
+
         for (XSSFRow row : data) {
-
-            //System.out.println(item.getMake() + " " + item.getReg());
-//            if(row.getCell(6) != null && row.getCell(6).getCellType() == HSSFCell.CELL_TYPE_STRING){
-//                String productCode = row.getCell(0).toString();
-//                System.out.println("productCode : " + productCode);
-//
-//            }
-//            else
             if(row != null && row.getCell(6) != null && row.getCell(6).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
-//                Double doubleProductCode = row.getCell(0).getNumericCellValue();
-//                System.out.println("productCode : " + String.format("%.0f",doubleProductCode));
-
                 Double doubleBarCode = row.getCell(6).getNumericCellValue();
                 System.out.println("doubleBarCode : " + String.format("%.0f",doubleBarCode));
 
-                //System.out.println("productCode : " + productCode);
                 if(row.getCell(0) != null ) {
                     productsVariants.insertRow(row);
                 }
 
             }
         }
+    }
 
+    public void priceLasting() throws SQLException {
+
+
+        //factory.
+
+
+//        ProductsVariants productsVariants = new ProductsVariants();
+//
+//        for (XSSFRow row : data) {
+//            if(row != null && row.getCell(6) != null && row.getCell(6).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+//                Double doubleBarCode = row.getCell(6).getNumericCellValue();
+//                System.out.println("doubleBarCode : " + String.format("%.0f",doubleBarCode));
+//
+//                if(row.getCell(0) != null ) {
+//                    productsVariants.insertRow(row);
+//                }
+//
+//            }
+//        }
     }
 
 
