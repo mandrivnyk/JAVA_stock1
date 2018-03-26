@@ -1,104 +1,58 @@
 package com.easier.stock;
 
-public abstract class Product {
-    private int vendorCode;
-    private String name;
-    private int inStock;
-    private String size;
-    private String color;
-    private int barcode;
-    private String brend;
-    private double priceRRZ;
-    private double priceSpec;
-    private double priceOpt;
-    private int year;
+public interface Product {
+    String getMoreInfo();
 
-    public int getVendorCode() {
-        return vendorCode;
-    }
+    void setMoreInfo(String moreInfo);
 
-    public void setVendorCode(int vendorCode) {
-        this.vendorCode = vendorCode;
-    }
+    String getVendorCode();
 
-    public String getName() {
-        return name;
-    }
+    void setVendorCode(String vendorCode);
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public int getInStock() {
-        return inStock;
-    }
+    String getProductCode();
 
-    public void setInStock(int inStock) {
-        this.inStock = inStock;
-    }
+    void setProductCode(String productCode);
 
-    public String getSize() {
-        return size;
-    }
 
-    public void setSize(String size) {
-        this.size = size;
-    }
+    String getName();
 
-    public String getColor() {
-        return color;
-    }
+    void setName(String name);
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+    int getInStock();
 
-    public int getBarcode() {
-        return barcode;
-    }
+    void setInStock(int inStock);
 
-    public void setBarcode(int barcode) {
-        this.barcode = barcode;
-    }
+    String getSize();
 
-    public String getBrend() {
-        return brend;
-    }
+    void setSize(String size);
 
-    public void setBrend(String brend) {
-        this.brend = brend;
-    }
+    String getColor();
 
-    public double getPriceRRZ() {
-        return priceRRZ;
-    }
+    void setColor(String color);
 
-    public void setPriceRRZ(double priceRRZ) {
-        this.priceRRZ = priceRRZ;
-    }
+    String getBarcode();
 
-    public double getPriceSpec() {
-        return priceSpec;
-    }
+    void setBarcode(String barcode);
 
-    public void setPriceSpec(double priceSpec) {
-        this.priceSpec = priceSpec;
-    }
+    String getBrend();
 
-    public double getPriceOpt() {
-        return priceOpt;
-    }
+    void setBrend(String brend);
 
-    public void setPriceOpt(double priceOpt) {
-        this.priceOpt = priceOpt;
-    }
+    double getPriceRRZ();
 
-    public int getYear() {
-        return year;
-    }
+    void setPriceRRZ(double priceRRZ);
 
-    public void setYear(int year) {
-        this.year = year;
-    }
+    double getPriceSpec();
+
+    void setPriceSpec(double priceSpec);
+
+    double getPriceOpt();
+
+    void setPriceOpt(double priceOpt);
+
+    int getYear();
+
+    void setYear(int year);
 
 }

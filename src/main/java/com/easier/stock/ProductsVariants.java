@@ -89,10 +89,6 @@ public class ProductsVariants {
             sizeString = row.getCell(2).toString();
         }
 
-//
-//        Double inStockInFile = row.getCell(1).getNumericCellValue();
-//        String inStockInFileString = String.format("%.0f", inStockInFile);
-
         Double price = 0.0;
         if(row.getCell(4) != null && row.getCell(4).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
             price = row.getCell(4).getNumericCellValue();
@@ -109,9 +105,6 @@ public class ProductsVariants {
         System.out.println("quantityString  : " + quantityString);
 
 
-
-
-
             String insertSQL = "INSERT INTO SS_products_variants (product_code, quantity, size, color, price, barcode,producer, sklad ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = conn.prepareStatement(insertSQL);
             preparedStatement.setString(1, productCodeString ); //product_code
@@ -125,6 +118,22 @@ public class ProductsVariants {
             preparedStatement.executeUpdate();
 
 
+    }
+
+    public void saveProductVariant(Product product) throws SQLException {
+        String insertSQL = "INSERT INTO SS_products_variants (product_code, quantity, size, color, price, barcode,producer, sklad ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        PreparedStatement preparedStatement = conn.prepareStatement(insertSQL);
+        preparedStatement.setString(1, product.getProductCode() ); //product_code
+        String quantityString = Integer.toString(product.getInStock());
+        preparedStatement.setString(2, quantityString); //quantity
+        preparedStatement.setString(3, product.getSize()); //size
+        preparedStatement.setString(4, product.getColor()); //color
+        String priceRRZString = String.format("%.0f", product.getPriceRRZ());
+        preparedStatement.setString(5, priceRRZString); //price
+        preparedStatement.setString(6, product.getBarcode()); // barcode
+        preparedStatement.setString(7, product.getBrend()); // producer
+        preparedStatement.setString(8, "2");
+        preparedStatement.executeUpdate();
     }
 
 
