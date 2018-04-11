@@ -12,8 +12,22 @@ import java.util.stream.Collectors;
 
 public class SupplierTerraIncognita implements Supplier {
 
+    private List<String> supplierBrends;
+
+
+    public SupplierTerraIncognita() {
+        this.supplierBrends.add(Brend.TERRA_INCOGNITA);
+        this.supplierBrends.add(Brend.TREZETA);
+        this.supplierBrends.add(Brend.VASQUE);
+        this.supplierBrends.add(Brend.KAYLAND);
+    }
+
+    public List<String> getSupplierBrends() {
+        return supplierBrends;
+    }
+
     public List<Product> createListStock(List<XSSFRow> data, List<Product> outerExisting) throws SQLException {
-        List<Product> list = new ArrayList<Product>();
+        List<Product> list = new ArrayList<>();
         ProductsBarcodes productsBarcodes = new ProductsBarcodes();
         for (XSSFRow row : data) {
             if(row != null && row.getCell(3) != null && row.getCell(3).getCellType() == HSSFCell.CELL_TYPE_NUMERIC && row.getCell(11) != null && row.getCell(11).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
@@ -57,7 +71,7 @@ public class SupplierTerraIncognita implements Supplier {
                 if(result.size() > 0) {
                     product.setColor(result.get(0).getColor());
                     product.setSize(result.get(0).getMoreInfo());
-                    product.setVendorCode(result.get(0).getVendorCode());
+                    product.setBrend(result.get(0).getBrend());
                 }
 
                 list.add(product);
@@ -66,6 +80,8 @@ public class SupplierTerraIncognita implements Supplier {
 
         return list;
     }
+
+
 
     public List<Product> createListExisting(List<XSSFRow> data) throws SQLException {
         List<Product> list = new ArrayList<Product>();
@@ -94,9 +110,10 @@ public class SupplierTerraIncognita implements Supplier {
 
 
                 if(row.getCell(4) != null && row.getCell(4).getCellType() == HSSFCell.CELL_TYPE_STRING){
-                    String productColor = row.getCell(4).toString();
-                    product.setVendorCode(productColor);
+                    String vendorCode = row.getCell(4).toString();
+                    product.setVendorCode(vendorCode);
                 }
+                //product.setBrend(this.getSupplierBrends().get(0));
                 list.add(product);
             }
         }

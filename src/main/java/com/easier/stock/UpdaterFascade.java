@@ -122,11 +122,13 @@ public class UpdaterFascade {
         ProductsVariants productsVariants = new ProductsVariants();
         ResultSet rs = productsVariants.getProductsVariantsUnique();
         while (rs.next()) {
-            if(rs.getString("product_code").trim().equals("alfa_2")){
+            Product product = new ProductInStock();
+            if(rs.getString("producer").trim().equals("Terra Incognita")){
+                product.setPriceRRZ(rs.getInt("price"));
                 System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  alfa_2 ");
             }
             String productCode = rs.getString("product_code").trim();
-            Product product = new ProductInStock();
+
             product.getProduct(productCode);
             product.setInStock(inStockNum);
             product.setSortOrder(sortOrder);

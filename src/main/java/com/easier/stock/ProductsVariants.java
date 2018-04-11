@@ -26,7 +26,7 @@ public class ProductsVariants {
 
     public  ResultSet getProductsVariantsUnique () throws SQLException {
         Statement st = conn.createStatement();
-        ResultSet rs = st.executeQuery("SELECT DISTINCT(product_code) FROM SS_products_variants ORDER BY product_code ASC");
+        ResultSet rs = st.executeQuery("SELECT DISTINCT(product_code), producer, price, sklad, quantity, size, color, barcode   FROM SS_products_variants ORDER BY product_code ASC");
         return rs;
     }
 
