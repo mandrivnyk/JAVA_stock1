@@ -2,7 +2,11 @@ package com.easier.stock;
 
 import org.apache.poi.xssf.usermodel.XSSFRow;
 
+import javax.json.Json;
+import javax.json.JsonArray;
+import javax.json.JsonArrayBuilder;
 import java.io.IOException;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -89,9 +93,11 @@ public class UpdaterFascade {
 //                List<Product> result  = outerExistingSupplierList.stream()
 //                        .filter(a -> Objects.equals(a.getBarcode(), 4.823081503293E12))
 //                        .collect(Collectors.toList());
-                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Result = ");
+                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Result ");
             } catch (IOException ex) {
                 ex.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
         }
         return outerExistingSupplierList;
@@ -100,18 +106,34 @@ public class UpdaterFascade {
     public void saveOuterStock(String pathToSupplierStock, String pathToSupplierExisting, String nameSupplier) throws IOException, SQLException {
         List<Product> outerExisting = OuterExisting(pathToSupplierExisting, nameSupplier);
         List<Product> outerStock =  OuterStock(pathToSupplierStock, nameSupplier, outerExisting);
+        ProductsVariants productsVariants = new ProductsVariants();
         for (Product product:outerStock) {
-            ProductsVariants productsVariants = new ProductsVariants();
-            productsVariants.saveProductVariant(product);
+            if( product.getProductCode() != null && !product.getProductCode().isEmpty()) {
+                productsVariants.saveProductVariant(product);
+            }
         }
 
-        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock= ");
-//
-//        CreatorSupplier creatorSupplier = new CreatorSupplier();
-//        SupplierTerraIncognita  supplier = (SupplierTerraIncognita) creatorSupplier.create("Terra Incognita");
-//        List<Product> outerStockExtended = supplier.createListStockExtended(outerStock, outerExisting);
-
+        ProductInStock.setInStockAll(0, 1000, nameSupplier);
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
     }
+
+    public void updateInStockOfProducts(int inStockNum, int sortOrder) throws SQLException {
+
+        ProductsVariants productsVariants = new ProductsVariants();
+        ResultSet rs = productsVariants.getProductsVariantsUnique();
+        while (rs.next()) {
+            if(rs.getString("product_code").trim().equals("alfa_2")){
+                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  alfa_2 ");
+            }
+            String productCode = rs.getString("product_code").trim();
+            Product product = new ProductInStock();
+            product.getProduct(productCode);
+            product.setInStock(inStockNum);
+            product.setSortOrder(sortOrder);
+            product.updateProduct();
+        }
+    }
+
     public void  UpdaterPriceLasting() throws SQLException {
         List<XSSFRow> dataFromFile;
 

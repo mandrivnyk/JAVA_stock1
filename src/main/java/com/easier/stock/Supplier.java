@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface Supplier {
     List createListStock(List<XSSFRow> data, List<Product> outerExisting) throws SQLException;
-    List createListExisting(List<XSSFRow> data);
+    List createListExisting(List<XSSFRow> data) throws SQLException;
 }

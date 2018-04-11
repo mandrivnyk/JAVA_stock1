@@ -14,7 +14,7 @@ public class Updater {
 
     public Updater(List<XSSFRow> data) throws SQLException {
         this.data = data;
-        this.conn = new ConnectionDB(1).getConn();
+        this.conn = ConnectionDB.getInstance().getConn();
     }
 
     public void innerStock() throws SQLException {
@@ -29,13 +29,49 @@ public class Updater {
                 if(row.getCell(1) != null && row.getCell(1).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
                     quantity = row.getCell(1).getNumericCellValue();
                 }
+
                 if(row.getCell(0) != null && quantity > 0) {
                     productsVariants.insertRow(row);
                 }
 
+                saveBarcodesFromInnerStock(row, "Lasting");
             }
         }
     }
+
+    public void saveBarcodesFromInnerStock(XSSFRow row, String nameSupplier) throws SQLException {
+        String productCodeString = "";
+        if(row.getCell(0) != null && row.getCell(0).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+            Double productCode = row.getCell(0).getNumericCellValue();
+            productCodeString = String.format("%.0f", productCode);
+        }
+        else if(row.getCell(0) != null && row.getCell(0).getCellType() == HSSFCell.CELL_TYPE_STRING){
+            productCodeString = row.getCell(0).toString();
+        }
+
+        String producerString = "";
+        if(row.getCell(10) != null && row.getCell(10).getCellType() == HSSFCell.CELL_TYPE_STRING){
+            producerString = row.getCell(10).toString();
+            System.out.println("producerString : " + producerString);
+        }
+
+        String productBarcodeString = "";
+        if(row.getCell(11) != null && row.getCell(11).getCellType() == HSSFCell.CELL_TYPE_STRING){
+            productBarcodeString = row.getCell(11).toString();
+        }
+
+        if(!productCodeString.isEmpty() && !productBarcodeString.isEmpty() && producerString.equals(nameSupplier)) {
+            ProductInStock product = new ProductInStock();
+            product.getProduct(productCodeString);
+            productBarcodeString = productBarcodeString.replaceAll(",", "\r\n");
+            product.setBarcode(productBarcodeString);
+            product.updateProduct();
+        }
+    }
+
+
+
+
 
     public void priceLasting() throws SQLException {
 

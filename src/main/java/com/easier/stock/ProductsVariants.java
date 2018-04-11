@@ -10,7 +10,7 @@ public class ProductsVariants {
     Connection conn;
 
     public ProductsVariants() throws SQLException {
-        this.conn = new ConnectionDB(1).getConn();
+        this.conn = ConnectionDB.getInstance().getConn();
     }
 
     public ResultSet getProductsVariants() throws SQLException {
@@ -21,6 +21,12 @@ public class ProductsVariants {
     public  ResultSet getProductsVariantsWithBarCode(Double barCode) throws SQLException {
         Statement st = conn.createStatement();
         ResultSet rs = st.executeQuery("SELECT * FROM SS_products_variants WHERE barcode ='"+String.format("%.0f",barCode)+"'");
+        return rs;
+    }
+
+    public  ResultSet getProductsVariantsUnique () throws SQLException {
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery("SELECT DISTINCT(product_code) FROM SS_products_variants ORDER BY product_code ASC");
         return rs;
     }
 
@@ -39,10 +45,10 @@ public class ProductsVariants {
         String updateString =
                 "UPDATE SS_products_variants " +
                         "set quantity = ? where barcode = ?";
-        PreparedStatement updateProductInStock = conn.prepareStatement(updateString);
-        updateProductInStock.setInt(1,  Integer.parseInt(inStockInFileString));
-        updateProductInStock.setString(2, String.format("%.0f",doubleBarCode));
-        updateProductInStock.executeUpdate();
+        PreparedStatement updateProductsVariants = conn.prepareStatement(updateString);
+        updateProductsVariants.setInt(1,  Integer.parseInt(inStockInFileString));
+        updateProductsVariants.setString(2, String.format("%.0f",doubleBarCode));
+        updateProductsVariants.executeUpdate();
     }
 
 

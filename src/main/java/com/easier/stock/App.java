@@ -25,22 +25,25 @@ public class App {
         GenProductsVariantsJSON genJson = new GenProductsVariantsJSON(pathToJsonFolder);
         genJson.purgeDirectory(new File(pathToJsonFolder));
 
+//        ProductInStock product = new ProductInStock();
+//        product.getProduct("alfa_3");
+//        product.addBarcodeIntoProduct("test");
+//        product.updateProduct();
+
         UpdaterFascade updaterFascade = new UpdaterFascade();
         ProductsBarcodes productsBarcodes = new ProductsBarcodes();
-        productsBarcodes.genBarcodesFromProducts();
+        productsBarcodes.saveBarcodesFromProductsTable();
         updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, "Terra Incognita");
 
+        updaterFascade.InnerStock(pathToInnerSkladFile);
+        genJson.process();
+        updaterFascade.updateInStockOfProducts(50, 1);
 
 
 
-//        List<Product> outerStock =  updaterFascade.OuterStock(pathToTerraIncognitaStock, "Terra Incognita");
-//        List<Product> outerExisting = updaterFascade.OuterExisting(pathToTerraIncognitaExisting, "Terra Incognita");
-//        CreatorSupplier creatorSupplier = new CreatorSupplier();
-//        SupplierTerraIncognita  supplier = (SupplierTerraIncognita) creatorSupplier.create("Terra Incognita");
-//        List<Product> outerStockExtended = supplier.createListStockExtended(outerStock, outerExisting);
-//        updaterFascade.InnerStock(pathToInnerSkladFile);
-//        genJson.process();
-//        updaterFascade.UpdaterPriceLasting();
+
+
+        //        updaterFascade.UpdaterPriceLasting();
 
 
     }

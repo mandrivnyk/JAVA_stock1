@@ -1,5 +1,8 @@
 package com.easier.stock;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public interface Product {
     String getMoreInfo();
 
@@ -54,5 +57,11 @@ public interface Product {
     int getYear();
 
     void setYear(int year);
+    void getProduct(String productCode) throws SQLException;
+    void updateProduct() throws SQLException;
+    static void setInStock(int inStock, String producer){ }
+    int getSortOrder();
+    void setSortOrder(int sortOrder);
+
 
 }

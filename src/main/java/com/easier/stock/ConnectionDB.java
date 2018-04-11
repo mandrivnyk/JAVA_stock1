@@ -8,10 +8,7 @@ import java.sql.SQLException;
 public class ConnectionDB {
 
     public Connection conn;
-
-    public  Connection getConn() {
-        return conn;
-    }
+    private static ConnectionDB dbIsntance;
 
     public ConnectionDB(int  dbType) throws SQLException {
         switch (dbType) {
@@ -20,6 +17,19 @@ public class ConnectionDB {
         }
 
     }
+
+    public  Connection getConn() {
+        return conn;
+    }
+
+    public static ConnectionDB getInstance() throws SQLException {
+        if(dbIsntance==null){
+            dbIsntance= new ConnectionDB(1);
+        }
+        return dbIsntance;
+    }
+
+
 
     public static Connection cMysql() throws SQLException {
         Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.1.69/tatonka?user=root&password=kbyerc&useLegacyDatetimeCode=false&serverTimezone=UTC");

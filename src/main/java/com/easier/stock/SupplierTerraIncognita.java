@@ -67,7 +67,7 @@ public class SupplierTerraIncognita implements Supplier {
         return list;
     }
 
-    public List<Product> createListExisting(List<XSSFRow> data){
+    public List<Product> createListExisting(List<XSSFRow> data) throws SQLException {
         List<Product> list = new ArrayList<Product>();
         for (XSSFRow row : data) {
             if(row != null && row.getCell(3) != null && row.getCell(3).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){

@@ -1,6 +1,7 @@
 package com.easier.stock;
 
 import java.sql.*;
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class ProductsBarcodes {
@@ -12,7 +13,7 @@ public class ProductsBarcodes {
 
 
     public ProductsBarcodes() throws SQLException {
-        this.conn = new ConnectionDB(1).getConn();
+        this.conn = ConnectionDB.getInstance().getConn();
     }
 
     public int getId() {
@@ -77,7 +78,7 @@ public class ProductsBarcodes {
         return rs;
     }
 
-    public void genBarcodesFromProducts() throws SQLException {
+    public void saveBarcodesFromProductsTable() throws SQLException {
         truncateProductsBarcodes();
         Statement st = conn.createStatement();
         ResultSet rs = st.executeQuery("SELECT productId, product_code, barcodes FROM SS_products WHERE barcodes <> '' ORDER BY productID ASC");
@@ -97,6 +98,7 @@ public class ProductsBarcodes {
             }
         }
     }
+
 
     public  void truncateProductsBarcodes() throws SQLException {
         String truncateString = "TRUNCATE TABLE SS_products_barcodes";
