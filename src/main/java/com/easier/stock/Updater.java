@@ -34,7 +34,7 @@ public class Updater {
                     productsVariants.insertRow(row);
                 }
 
-                saveBarcodesFromInnerStock(row, "Lasting");
+//                saveBarcodesFromInnerStock(row, "Lasting");
             }
         }
     }

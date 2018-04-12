@@ -75,8 +75,6 @@ public class UpdaterFascade {
         List<XSSFRow> data;
         List<Product> outerExistingSupplierList = new ArrayList<Product>();
 
-//        GenProductsVariantsJSON genJson = new GenProductsVariantsJSON(pathToJsonFolder);
-
         ExcelParcer excelParcer = new ExcelParcer();
         int numberOfSheets = excelParcer.getNumberOfSheets(pathToFile);
 
@@ -89,10 +87,7 @@ public class UpdaterFascade {
                 System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ dataFromFile.size() = "+data.size());
 
                 outerExistingSupplierList = supplier.createListExisting(data);
-               // List<Sample> list = new ArrayList<Sample>();
-//                List<Product> result  = outerExistingSupplierList.stream()
-//                        .filter(a -> Objects.equals(a.getBarcode(), 4.823081503293E12))
-//                        .collect(Collectors.toList());
+
                 System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Result ");
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -117,15 +112,15 @@ public class UpdaterFascade {
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
     }
 
-    public void updateInStockOfProducts(int inStockNum, int sortOrder) throws SQLException {
+    public void updateProductsFromVariants(int inStockNum, int sortOrder) throws SQLException {
 
         ProductsVariants productsVariants = new ProductsVariants();
         ResultSet rs = productsVariants.getProductsVariantsUnique();
         while (rs.next()) {
             Product product = new ProductInStock();
-            if(rs.getString("producer").trim().equals("Terra Incognita")){
+
+            if(Integer.parseInt(rs.getString("sklad").trim()) == 2){
                 product.setPriceRRZ(rs.getInt("price"));
-                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  alfa_2 ");
             }
             String productCode = rs.getString("product_code").trim();
 

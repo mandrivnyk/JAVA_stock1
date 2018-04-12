@@ -12,14 +12,16 @@ import java.util.stream.Collectors;
 
 public class SupplierTerraIncognita implements Supplier {
 
-    private List<String> supplierBrends;
+
 
 
     public SupplierTerraIncognita() {
-        this.supplierBrends.add(Brend.TERRA_INCOGNITA);
-        this.supplierBrends.add(Brend.TREZETA);
-        this.supplierBrends.add(Brend.VASQUE);
-        this.supplierBrends.add(Brend.KAYLAND);
+
+        //supplierBrends = new ArrayList<>();
+        supplierBrends.add(Brend.TERRA_INCOGNITA);
+        supplierBrends.add(Brend.TREZETA);
+        supplierBrends.add(Brend.VASQUE);
+        supplierBrends.add(Brend.KAYLAND);
     }
 
     public List<String> getSupplierBrends() {
@@ -34,8 +36,8 @@ public class SupplierTerraIncognita implements Supplier {
                 Product product = new ProductInStock();
 
                 if(row.getCell(0) != null && row.getCell(0).getCellType() == HSSFCell.CELL_TYPE_STRING){
-                    String productNanme = row.getCell(0).toString();
-                    product.setName(productNanme);
+                    String productName = row.getCell(0).toString();
+                    product.setName(productName);
                 }
                 if(row.getCell(3) != null && row.getCell(3).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
                     Double barcode = row.getCell(3).getNumericCellValue();
@@ -97,16 +99,23 @@ public class SupplierTerraIncognita implements Supplier {
                     String productColor = row.getCell(1).toString();
                     product.setColor(productColor);
                 }
-                if(row.getCell(2) != null && row.getCell(2).getCellType() == HSSFCell.CELL_TYPE_STRING){
-                    String productMoreInfo = row.getCell(2).toString();
-                    product.setMoreInfo(productMoreInfo);
-                }
 
                 if(row.getCell(3) != null && row.getCell(3).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
                     Double barcode = row.getCell(3).getNumericCellValue();
                     String barcodeString = String.format("%.0f", barcode);
                     product.setBarcode(barcodeString);
                 }
+
+                if(row.getCell(2) != null && row.getCell(2).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+                    Double moreInfo = row.getCell(2).getNumericCellValue();
+                    String productMoreInfo = String.format("%.0f", moreInfo);
+                    product.setMoreInfo(productMoreInfo);
+                }
+                else if(row.getCell(2) != null && row.getCell(2).getCellType() == HSSFCell.CELL_TYPE_STRING){
+                    String productMoreInfo = row.getCell(2).toString();
+                    product.setMoreInfo(productMoreInfo);
+                }
+
 
 
                 if(row.getCell(4) != null && row.getCell(4).getCellType() == HSSFCell.CELL_TYPE_STRING){

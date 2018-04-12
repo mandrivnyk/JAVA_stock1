@@ -33,11 +33,11 @@ public class App {
         UpdaterFascade updaterFascade = new UpdaterFascade();
         ProductsBarcodes productsBarcodes = new ProductsBarcodes();
         productsBarcodes.saveBarcodesFromProductsTable();
-        updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, Supplier.SupplierName.TERRA_INCOGNITA);
+        updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, Supplier.Name.TERRA_INCOGNITA.toString());
 
         updaterFascade.InnerStock(pathToInnerSkladFile);
         genJson.process();
-        updaterFascade.updateInStockOfProducts(50, 1);
+        updaterFascade.updateProductsFromVariants(50, 1);
 
 
 

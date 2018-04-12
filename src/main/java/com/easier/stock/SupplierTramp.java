@@ -5,7 +5,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import java.sql.SQLException;
 import java.util.List;
 
-public class SupplierLasting implements Supplier {
+public class SupplierTramp implements Supplier{
+
 
     @Override
     public List createListStock(List<XSSFRow> data, List<Product> outerExisting) throws SQLException {

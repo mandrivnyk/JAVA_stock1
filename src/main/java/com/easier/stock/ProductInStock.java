@@ -1,6 +1,7 @@
 package com.easier.stock;
 
 import java.sql.*;
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class ProductInStock implements Product {
@@ -204,17 +205,25 @@ public class ProductInStock implements Product {
         updateProductInStock.executeUpdate();
     }
 
-    public static void setInStockAll(int inStock, int sortOrder, String producer) throws SQLException {
+    public static void setInStockAll(int inStock, int sortOrder, String nameSupplier) throws SQLException {
         Connection conn = ConnectionDB.getInstance().getConn();
-        String updateString =
-                "UPDATE SS_products " +
-                       "set in_stock= ?, sort_order = ?  where producer = ? AND type= ?";
-        PreparedStatement updateProductInStock = conn.prepareStatement(updateString);
-        updateProductInStock.setInt(1,  inStock);
-        updateProductInStock.setInt(2,  sortOrder);
-        updateProductInStock.setString(3,  producer);
-        updateProductInStock.setInt(4,  TYPE_NEW);
-        updateProductInStock.executeUpdate();
+        CreatorSupplier creatorSupplier = new CreatorSupplier();
+        Supplier supplier = creatorSupplier.create(nameSupplier);
+        List<String> brends = supplier.getSupplierBrends();
+
+        for (String brend: brends) {
+            String updateString =
+                    "UPDATE SS_products " +
+                            "set in_stock= ?, sort_order = ?  where producer = ? AND type= ?";
+            PreparedStatement updateProductInStock = conn.prepareStatement(updateString);
+            updateProductInStock.setInt(1,  inStock);
+            updateProductInStock.setInt(2,  sortOrder);
+            updateProductInStock.setString(3,  brend);
+            updateProductInStock.setInt(4,  TYPE_NEW);
+            updateProductInStock.executeUpdate();
+        }
+        
+
     }
 
     public void addBarcodeIntoProduct(String barcode) throws SQLException {

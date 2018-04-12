@@ -6,5 +6,11 @@ public interface Brend {
     String VASQUE  = "Vasque";
     String KAYLAND  = "Kayland";
     String LASTING  = "Lasting";
+    String SOL  = "Sol";
+    String TRAMP  = "Tramp";
+    String  HEYSPORT = "HEY-sport";
+    String  TOTEM = "Totem";
+    String  DESTROYER = "Destroyer";
+    String  TRAMPDESTROYER = "Tramp/Destroyer";
 
 }
