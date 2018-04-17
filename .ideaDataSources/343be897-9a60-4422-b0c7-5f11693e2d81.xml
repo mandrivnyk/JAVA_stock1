@@ -1742,512 +1742,517 @@ productID</ColNames>
     </column>
     <column id="418" parent="47" name="barcodes">
       <Position>40</Position>
-      <DataType>varchar(255)|0</DataType>
+      <DataType>varchar(2000)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <index id="419" parent="47" name="IDX_PRODUCTS1">
+    <column id="419" parent="47" name="type">
+      <Position>41</Position>
+      <DataType>varchar(20)|0</DataType>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <index id="420" parent="47" name="IDX_PRODUCTS1">
       <ColNames>categoryID</ColNames>
     </index>
-    <key id="420" parent="47" name="PRIMARY">
+    <key id="421" parent="47" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>productID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="421" parent="48" name="id">
+    <column id="422" parent="48" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="422" parent="48" name="productID">
+    <column id="423" parent="48" name="productID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="423" parent="48" name="product_code">
+    <column id="424" parent="48" name="product_code">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="424" parent="48" name="barcode">
+    <column id="425" parent="48" name="barcode">
       <Position>4</Position>
-      <DataType>varchar(256)|0</DataType>
+      <DataType>varchar(2000)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="425" parent="48" name="PRIMARY">
+    <key id="426" parent="48" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="426" parent="49" name="variantID">
+    <column id="427" parent="49" name="variantID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="427" parent="49" name="optionID">
+    <column id="428" parent="49" name="optionID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="428" parent="49" name="option_value">
+    <column id="429" parent="49" name="option_value">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="429" parent="49" name="sort_order">
+    <column id="430" parent="49" name="sort_order">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="430" parent="49" name="PRIMARY">
+    <key id="431" parent="49" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>variantID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="431" parent="50" name="id">
+    <column id="432" parent="50" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="432" parent="50" name="productID">
+    <column id="433" parent="50" name="productID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="433" parent="50" name="product_code">
+    <column id="434" parent="50" name="product_code">
       <Position>3</Position>
       <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="434" parent="50" name="quantity">
+    <column id="435" parent="50" name="quantity">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="435" parent="50" name="size">
+    <column id="436" parent="50" name="size">
       <Position>5</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="436" parent="50" name="color">
+    <column id="437" parent="50" name="color">
       <Position>6</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="437" parent="50" name="price">
+    <column id="438" parent="50" name="price">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="438" parent="50" name="barcode">
+    <column id="439" parent="50" name="barcode">
       <Position>8</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="439" parent="50" name="producer">
+    <column id="440" parent="50" name="producer">
       <Position>9</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="440" parent="50" name="sklad">
+    <column id="441" parent="50" name="sklad">
       <Position>10</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="441" parent="50" name="PRIMARY">
+    <key id="442" parent="50" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="442" parent="51" name="productID">
+    <column id="443" parent="51" name="productID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="443" parent="51" name="Owner">
+    <column id="444" parent="51" name="Owner">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="444" parent="51" name="PRIMARY">
+    <key id="445" parent="51" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>productID
 Owner</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="445" parent="52" name="settingsID">
+    <column id="446" parent="52" name="settingsID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="446" parent="52" name="settings_groupID">
+    <column id="447" parent="52" name="settings_groupID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="447" parent="52" name="settings_constant_name">
+    <column id="448" parent="52" name="settings_constant_name">
       <Position>3</Position>
       <DataType>varchar(64)|0</DataType>
     </column>
-    <column id="448" parent="52" name="settings_value">
+    <column id="449" parent="52" name="settings_value">
       <Position>4</Position>
       <DataType>varchar(500)|0</DataType>
     </column>
-    <column id="449" parent="52" name="settings_title">
+    <column id="450" parent="52" name="settings_title">
       <Position>5</Position>
       <DataType>varchar(128)|0</DataType>
     </column>
-    <column id="450" parent="52" name="settings_description">
+    <column id="451" parent="52" name="settings_description">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="451" parent="52" name="settings_html_function">
+    <column id="452" parent="52" name="settings_html_function">
       <Position>7</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="452" parent="52" name="sort_order">
+    <column id="453" parent="52" name="sort_order">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="453" parent="52" name="PRIMARY">
+    <key id="454" parent="52" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>settingsID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="454" parent="53" name="settings_groupID">
+    <column id="455" parent="53" name="settings_groupID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="455" parent="53" name="settings_group_name">
+    <column id="456" parent="53" name="settings_group_name">
       <Position>2</Position>
       <DataType>varchar(64)|0</DataType>
     </column>
-    <column id="456" parent="53" name="sort_order">
+    <column id="457" parent="53" name="sort_order">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="457" parent="53" name="PRIMARY">
+    <key id="458" parent="53" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>settings_groupID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="458" parent="54" name="SID">
+    <column id="459" parent="54" name="SID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="459" parent="54" name="Name">
+    <column id="460" parent="54" name="Name">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="460" parent="54" name="description">
+    <column id="461" parent="54" name="description">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="461" parent="54" name="shipping_price">
+    <column id="462" parent="54" name="shipping_price">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="462" parent="54" name="email_comments_text">
+    <column id="463" parent="54" name="email_comments_text">
       <Position>5</Position>
       <DataType>text|0</DataType>
     </column>
-    <column id="463" parent="54" name="Enabled">
+    <column id="464" parent="54" name="Enabled">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="464" parent="54" name="module_id">
+    <column id="465" parent="54" name="module_id">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="465" parent="54" name="sort_order">
+    <column id="466" parent="54" name="sort_order">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="466" parent="54" name="PRIMARY">
+    <key id="467" parent="54" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>SID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="467" parent="55" name="itemID">
+    <column id="468" parent="55" name="itemID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="468" parent="55" name="productID">
+    <column id="469" parent="55" name="productID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <key id="469" parent="55" name="PRIMARY">
+    <key id="470" parent="55" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>itemID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="470" parent="56" name="itemID">
+    <column id="471" parent="56" name="itemID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="471" parent="56" name="variantID">
+    <column id="472" parent="56" name="variantID">
       <Position>2</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="472" parent="57" name="customerID">
+    <column id="473" parent="57" name="customerID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="473" parent="57" name="itemID">
+    <column id="474" parent="57" name="itemID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="474" parent="57" name="Quantity">
+    <column id="475" parent="57" name="Quantity">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="475" parent="58" name="offerID">
+    <column id="476" parent="58" name="offerID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="476" parent="58" name="productID">
+    <column id="477" parent="58" name="productID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="477" parent="58" name="sort_order">
+    <column id="478" parent="58" name="sort_order">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <key id="478" parent="58" name="PRIMARY">
+    <key id="479" parent="58" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>offerID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="479" parent="59" name="MID">
+    <column id="480" parent="59" name="MID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="480" parent="59" name="Email">
+    <column id="481" parent="59" name="Email">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <column id="481" parent="59" name="customerID">
+    <column id="482" parent="59" name="customerID">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <key id="482" parent="59" name="PRIMARY">
+    <key id="483" parent="59" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>MID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="483" parent="60" name="varName">
+    <column id="484" parent="60" name="varName">
       <Position>1</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="484" parent="60" name="value">
+    <column id="485" parent="60" name="value">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="485" parent="61" name="classID">
+    <column id="486" parent="61" name="classID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="486" parent="61" name="name">
+    <column id="487" parent="61" name="name">
       <Position>2</Position>
       <DataType>varchar(64)|0</DataType>
     </column>
-    <column id="487" parent="61" name="address_type">
+    <column id="488" parent="61" name="address_type">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <key id="488" parent="61" name="PRIMARY">
+    <key id="489" parent="61" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>classID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="489" parent="62" name="classID">
+    <column id="490" parent="62" name="classID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="490" parent="62" name="countryID">
+    <column id="491" parent="62" name="countryID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="491" parent="62" name="isGrouped">
+    <column id="492" parent="62" name="isGrouped">
       <Position>3</Position>
       <DataType>tinyint(1)|0</DataType>
     </column>
-    <column id="492" parent="62" name="value">
+    <column id="493" parent="62" name="value">
       <Position>4</Position>
       <DataType>float|0</DataType>
     </column>
-    <column id="493" parent="62" name="isByZone">
+    <column id="494" parent="62" name="isByZone">
       <Position>5</Position>
       <DataType>tinyint(1)|0</DataType>
     </column>
-    <key id="494" parent="62" name="PRIMARY">
+    <key id="495" parent="62" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>classID
 countryID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="495" parent="63" name="classID">
+    <column id="496" parent="63" name="classID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="496" parent="63" name="zoneID">
+    <column id="497" parent="63" name="zoneID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
-    <column id="497" parent="63" name="value">
+    <column id="498" parent="63" name="value">
       <Position>3</Position>
       <DataType>float|0</DataType>
     </column>
-    <column id="498" parent="63" name="isGrouped">
+    <column id="499" parent="63" name="isGrouped">
       <Position>4</Position>
       <DataType>tinyint(1)|0</DataType>
     </column>
-    <key id="499" parent="63" name="PRIMARY">
+    <key id="500" parent="63" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>classID
 zoneID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="500" parent="64" name="tax_zipID">
+    <column id="501" parent="64" name="tax_zipID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="501" parent="64" name="classID">
+    <column id="502" parent="64" name="classID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="502" parent="64" name="countryID">
+    <column id="503" parent="64" name="countryID">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="503" parent="64" name="zip_template">
+    <column id="504" parent="64" name="zip_template">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="504" parent="64" name="value">
+    <column id="505" parent="64" name="value">
       <Position>5</Position>
       <DataType>float|0</DataType>
     </column>
-    <key id="505" parent="64" name="PRIMARY">
+    <key id="506" parent="64" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>tax_zipID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="506" parent="65" name="zoneID">
+    <column id="507" parent="65" name="zoneID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="507" parent="65" name="zone_name">
+    <column id="508" parent="65" name="zone_name">
       <Position>2</Position>
       <DataType>varchar(64)|0</DataType>
     </column>
-    <column id="508" parent="65" name="zone_code">
+    <column id="509" parent="65" name="zone_code">
       <Position>3</Position>
       <DataType>varchar(64)|0</DataType>
     </column>
-    <column id="509" parent="65" name="countryID">
+    <column id="510" parent="65" name="countryID">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <key id="510" parent="65" name="PRIMARY">
+    <key id="511" parent="65" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>zoneID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="511" parent="66" name="id">
+    <column id="512" parent="66" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="512" parent="66" name="dateadd">
+    <column id="513" parent="66" name="dateadd">
       <Position>2</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="513" parent="66" name="host">
+    <column id="514" parent="66" name="host">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="514" parent="66" name="uri">
+    <column id="515" parent="66" name="uri">
       <Position>4</Position>
       <DataType>varchar(512)|0</DataType>
     </column>
-    <column id="515" parent="66" name="script">
+    <column id="516" parent="66" name="script">
       <Position>5</Position>
       <DataType>varchar(512)|0</DataType>
     </column>
-    <column id="516" parent="66" name="cpu">
+    <column id="517" parent="66" name="cpu">
       <Position>6</Position>
       <DataType>float(15,5)|0</DataType>
     </column>
-    <column id="517" parent="66" name="memory">
+    <column id="518" parent="66" name="memory">
       <Position>7</Position>
       <DataType>float(15,5)|0</DataType>
     </column>
-    <column id="518" parent="66" name="exc_time">
+    <column id="519" parent="66" name="exc_time">
       <Position>8</Position>
       <DataType>float(15,5)|0</DataType>
     </column>
-    <column id="519" parent="66" name="cpu_sec">
+    <column id="520" parent="66" name="cpu_sec">
       <Position>9</Position>
       <DataType>float(15,5)|0</DataType>
     </column>
-    <column id="520" parent="66" name="memory_mb">
+    <column id="521" parent="66" name="memory_mb">
       <Position>10</Position>
       <DataType>float(15,5)|0</DataType>
     </column>
-    <column id="521" parent="66" name="bytes_read">
+    <column id="522" parent="66" name="bytes_read">
       <Position>11</Position>
       <DataType>float(15,5)|0</DataType>
     </column>
-    <column id="522" parent="66" name="bytes_write">
+    <column id="523" parent="66" name="bytes_write">
       <Position>12</Position>
       <DataType>float(15,5)|0</DataType>
     </column>
-    <column id="523" parent="66" name="hostnm">
+    <column id="524" parent="66" name="hostnm">
       <Position>13</Position>
       <DataType>char(32)|0</DataType>
     </column>
-    <key id="524" parent="66" name="PRIMARY">
+    <key id="525" parent="66" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

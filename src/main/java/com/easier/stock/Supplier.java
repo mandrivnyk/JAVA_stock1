@@ -7,14 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface Supplier {
-//    String TERRA_INCOGNITA;
-//    String GORGANY;
 
      enum Name {
         TERRA_INCOGNITA,
         GORGANY,
         TRAMP,
-         SHAMBALA
+        SHAMBALA
     }
 
     List<String> supplierBrends = new ArrayList<>();

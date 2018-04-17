@@ -17,7 +17,6 @@ public class SupplierTerraIncognita implements Supplier {
 
     public SupplierTerraIncognita() {
 
-        //supplierBrends = new ArrayList<>();
         supplierBrends.add(Brend.TERRA_INCOGNITA);
         supplierBrends.add(Brend.TREZETA);
         supplierBrends.add(Brend.VASQUE);
@@ -131,18 +130,4 @@ public class SupplierTerraIncognita implements Supplier {
 
     }
 
-    public List<Product> createListStockExtended(List<Product> listStock, List<Product> listExisting) {
-        for (Product product : listStock) {
-            List<Product> result  = listExisting.stream()
-                    .filter(a -> Objects.equals(a.getBarcode(), product.getBarcode()))
-                    .collect(Collectors.toList());
-            if(result.size() > 0) {
-                product.setColor(result.get(0).getColor());
-                product.setSize(result.get(0).getMoreInfo());
-            }
-        }
-
-        return listStock;
-
-    }
 }

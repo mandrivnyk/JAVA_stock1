@@ -51,24 +51,22 @@ public class UpdaterFascade {
         List<XSSFRow> data;
         List<Product> outerStockSupplierList = new ArrayList<Product>();
 
-//        GenProductsVariantsJSON genJson = new GenProductsVariantsJSON(pathToJsonFolder);
-
         ExcelParcer excelParcer = new ExcelParcer();
         int numberOfSheets = excelParcer.getNumberOfSheets(pathToFile);
 
         CreatorSupplier creatorSupplier = new CreatorSupplier();
         Supplier supplier = creatorSupplier.create(nameSupplier);
 
-        for(int i = 0; i< numberOfSheets; i++) {
+       // for(int i = 0; i< numberOfSheets; i++) {
             try {
-                data = excelParcer.readFromExcelNewVersions(pathToFile, i);
+                data = excelParcer.readFromExcelNewVersions(pathToFile, 0);
                 System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ dataFromFile.size() = "+data.size());
 
                 outerStockSupplierList = supplier.createListStock(data, outerExisting);
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
-        }
+        //}
         return  outerStockSupplierList;
     }
     public List<Product> OuterExisting(String pathToFile, String nameSupplier) throws IOException {
@@ -118,13 +116,17 @@ public class UpdaterFascade {
         ResultSet rs = productsVariants.getProductsVariantsUnique();
         while (rs.next()) {
             Product product = new ProductInStock();
+            String productCode = rs.getString("product_code").trim();
+            product.getProduct(productCode);
 
             if(Integer.parseInt(rs.getString("sklad").trim()) == 2){
                 product.setPriceRRZ(rs.getInt("price"));
             }
-            String productCode = rs.getString("product_code").trim();
 
-            product.getProduct(productCode);
+            if(rs.getString("barcode").trim().equals("4823081500506")){
+                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
+            }
+
             product.setInStock(inStockNum);
             product.setSortOrder(sortOrder);
             product.updateProduct();
