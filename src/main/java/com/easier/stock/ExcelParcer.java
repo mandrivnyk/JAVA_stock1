@@ -49,7 +49,7 @@ public class ExcelParcer {
         XSSFSheet myExcelSheet = myExcelBook.getSheetAt(sheetIndex);
         System.out.println("getPhysicalNumberOfRows : " + myExcelSheet.getPhysicalNumberOfRows());
 
-        for(int i=0; i< myExcelSheet.getPhysicalNumberOfRows()-1; i++) {
+        for(int i=0; i< myExcelSheet.getPhysicalNumberOfRows(); i++) {
             XSSFRow row = myExcelSheet.getRow(i);
             dataFromFile.add(row);
         }

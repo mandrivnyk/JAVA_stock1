@@ -69,6 +69,8 @@ public class UpdaterFascade {
         //}
         return  outerStockSupplierList;
     }
+
+
     public List<Product> OuterExisting(String pathToFile, String nameSupplier) throws IOException {
         List<XSSFRow> data;
         List<Product> outerExistingSupplierList = new ArrayList<Product>();
@@ -97,39 +99,56 @@ public class UpdaterFascade {
     }
 
     public void saveOuterStock(String pathToSupplierStock, String pathToSupplierExisting, String nameSupplier) throws IOException, SQLException {
-        List<Product> outerExisting = OuterExisting(pathToSupplierExisting, nameSupplier);
-        List<Product> outerStock =  OuterStock(pathToSupplierStock, nameSupplier, outerExisting);
-        ProductsVariants productsVariants = new ProductsVariants();
-        for (Product product:outerStock) {
-            if( product.getProductCode() != null && !product.getProductCode().isEmpty()) {
-                productsVariants.saveProductVariant(product);
-            }
+
+        List<Product> outerExisting = new ArrayList<>();
+        if(pathToSupplierExisting != null && !pathToSupplierExisting.isEmpty()){
+            outerExisting = OuterExisting(pathToSupplierExisting, nameSupplier);
         }
+
+        List<Product> outerStock =  OuterStock(pathToSupplierStock, nameSupplier, outerExisting);
+
+        ProductsVariants productsVariants = new ProductsVariants();
+        productsVariants.save(outerStock);
 
         ProductInStock.setInStockAll(0, 1000, nameSupplier);
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
     }
 
+
+
+
+
     public void updateProductsFromVariants(int inStockNum, int sortOrder) throws SQLException {
 
         ProductsVariants productsVariants = new ProductsVariants();
         ResultSet rs = productsVariants.getProductsVariantsUnique();
+
         while (rs.next()) {
-            Product product = new ProductInStock();
-            String productCode = rs.getString("product_code").trim();
-            product.getProduct(productCode);
+//            Boolean res = rs.getString("barcode").equals("4743131038288");
+//            if(res)
+//            {
+//                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
+//            }
+            if(rs.getInt("quantity") > 0) {
+                if(rs.getString("product_code").trim() == "TRT-106.04"){
+                    System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
+                }
+                Product product = new ProductInStock();
+                String productCode = rs.getString("product_code").trim();
+                product.getProduct(productCode);
 
-            if(Integer.parseInt(rs.getString("sklad").trim()) == 2){
-                product.setPriceRRZ(rs.getInt("price"));
+
+                if(Integer.parseInt(rs.getString("sklad").trim()) == 2){
+                    product.setPriceRRZ(rs.getInt("price"));
+                }
+
+
+
+                product.setInStock(inStockNum);
+                product.setSortOrder(sortOrder);
+                product.updateProduct();
             }
 
-            if(rs.getString("barcode").trim().equals("4823081500506")){
-                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
-            }
-
-            product.setInStock(inStockNum);
-            product.setSortOrder(sortOrder);
-            product.updateProduct();
         }
     }
 

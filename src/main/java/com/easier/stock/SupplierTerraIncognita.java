@@ -66,14 +66,18 @@ public class SupplierTerraIncognita implements Supplier {
                     product.setPriceRRZ(priceRRZ);
                 }
 
-                List<Product> result  = outerExisting.stream()
-                        .filter(a -> Objects.equals(a.getBarcode(), product.getBarcode()))
-                        .collect(Collectors.toList());
-                if(result.size() > 0) {
-                    product.setColor(result.get(0).getColor());
-                    product.setSize(result.get(0).getMoreInfo());
-                    product.setBrend(result.get(0).getBrend());
+                if(outerExisting.size()>0) {
+                    List<Product> result  = outerExisting.stream()
+                            .filter(a -> Objects.equals(a.getBarcode(), product.getBarcode()))
+                            .collect(Collectors.toList());
+                    if(result.size() > 0) {
+                        product.setColor(result.get(0).getColor());
+                        product.setSize(result.get(0).getMoreInfo());
+                        product.setBrend(result.get(0).getBrend());
+                    }
                 }
+
+
 
                 list.add(product);
             }

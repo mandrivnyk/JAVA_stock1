@@ -32,6 +32,8 @@ public class ConnectionDB {
 
 
     public static Connection cMysql() throws SQLException {
+//        Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.43.174/tatonka?user=root&password=kbyerc&useLegacyDatetimeCode=false&serverTimezone=UTC");
+//        Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.0.69/tatonka?user=root&password=kbyerc&useLegacyDatetimeCode=false&serverTimezone=UTC");
         Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.1.69/tatonka?user=root&password=kbyerc&useLegacyDatetimeCode=false&serverTimezone=UTC");
         return conn;
     }

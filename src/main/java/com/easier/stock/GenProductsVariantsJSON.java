@@ -58,7 +58,7 @@ public class GenProductsVariantsJSON {
     private  void saveAsJsonToFiles(String pathToFile, JsonArray jsonArray ) {
         FileWriter file = null;
         try  {
-            file = new FileWriter(pathToFile);
+            file = new FileWriter(pathToFile.trim());
 
             JsonWriter jsonWriter = Json.createWriter(file);
             jsonWriter.writeArray(jsonArray);

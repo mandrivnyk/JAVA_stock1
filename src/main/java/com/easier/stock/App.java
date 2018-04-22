@@ -18,6 +18,8 @@ public class App {
         String pathToJsonFolder = "D:/JSON/";
         String pathToTerraIncognitaStock = "D:/terra-rest.xlsx";
         String pathToTerraIncognitaExisting = "D:/terra-barcodes.xlsx";
+        String pathToTrampStock = "D:/tramp-rest.xlsx";
+        String pathToTrampExisting = "D:/tramp-barcodes.xlsx";
 
         ProductsVariants productsVariants = new ProductsVariants();
         productsVariants.truncateProductsVariants();
@@ -33,15 +35,12 @@ public class App {
         UpdaterFascade updaterFascade = new UpdaterFascade();
         ProductsBarcodes productsBarcodes = new ProductsBarcodes();
         productsBarcodes.saveBarcodesFromProductsTable();
-        updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, Supplier.Name.TERRA_INCOGNITA.toString());
+//        updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, Supplier.Name.TERRA_INCOGNITA.toString());
+//        updaterFascade.saveOuterStock(pathToTrampStock, pathToTrampExisting, Supplier.Name.TRAMP.toString());
 
         updaterFascade.InnerStock(pathToInnerSkladFile);
         genJson.process();
         updaterFascade.updateProductsFromVariants(50, 1);
-
-
-
-
 
         //        updaterFascade.UpdaterPriceLasting();
 

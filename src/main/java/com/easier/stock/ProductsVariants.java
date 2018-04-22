@@ -4,6 +4,7 @@ import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 
 import java.sql.*;
+import java.util.List;
 
 public class ProductsVariants {
 
@@ -140,6 +141,15 @@ public class ProductsVariants {
         preparedStatement.setString(7, product.getBrend()); // producer
         preparedStatement.setString(8, "2");
         preparedStatement.executeUpdate();
+    }
+
+
+    public void save(List<Product> stock ) throws SQLException {
+        for (Product product:stock) {
+            if( product.getProductCode() != null && !product.getProductCode().isEmpty()) {
+                saveProductVariant(product);
+            }
+        }
     }
 
 

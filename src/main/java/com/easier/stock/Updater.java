@@ -19,18 +19,20 @@ public class Updater {
 
     public void innerStock() throws SQLException {
         ProductsVariants productsVariants = new ProductsVariants();
+        int barcodeCell = 6;
+        int inStockCell = 1;
 
         for (XSSFRow row : data) {
-            if(row != null && row.getCell(6) != null && row.getCell(6).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
-                Double doubleBarCode = row.getCell(6).getNumericCellValue();
+            if(row != null && row.getCell(barcodeCell) != null && row.getCell(barcodeCell).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+                Double doubleBarCode = row.getCell(barcodeCell).getNumericCellValue();
                 System.out.println("doubleBarCode : " + String.format("%.0f",doubleBarCode));
 
                 Double quantity = 0.0;
-                if(row.getCell(1) != null && row.getCell(1).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
-                    quantity = row.getCell(1).getNumericCellValue();
+                if(row.getCell(inStockCell) != null && row.getCell(inStockCell).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+                    quantity = row.getCell(inStockCell).getNumericCellValue();
                 }
 
-                if(row.getCell(0) != null && quantity > 0) {
+                if(row.getCell(inStockCell) != null && quantity > 0) {
                     productsVariants.insertRow(row);
                 }
 
@@ -39,35 +41,35 @@ public class Updater {
         }
     }
 
-    public void saveBarcodesFromInnerStock(XSSFRow row, String nameSupplier) throws SQLException {
-        String productCodeString = "";
-        if(row.getCell(0) != null && row.getCell(0).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
-            Double productCode = row.getCell(0).getNumericCellValue();
-            productCodeString = String.format("%.0f", productCode);
-        }
-        else if(row.getCell(0) != null && row.getCell(0).getCellType() == HSSFCell.CELL_TYPE_STRING){
-            productCodeString = row.getCell(0).toString();
-        }
-
-        String producerString = "";
-        if(row.getCell(10) != null && row.getCell(10).getCellType() == HSSFCell.CELL_TYPE_STRING){
-            producerString = row.getCell(10).toString();
-            System.out.println("producerString : " + producerString);
-        }
-
-        String productBarcodeString = "";
-        if(row.getCell(11) != null && row.getCell(11).getCellType() == HSSFCell.CELL_TYPE_STRING){
-            productBarcodeString = row.getCell(11).toString();
-        }
-
-        if(!productCodeString.isEmpty() && !productBarcodeString.isEmpty() && producerString.equals(nameSupplier)) {
-            ProductInStock product = new ProductInStock();
-            product.getProduct(productCodeString);
-            productBarcodeString = productBarcodeString.replaceAll(",", "\r\n");
-            product.setBarcode(productBarcodeString);
-            product.updateProduct();
-        }
-    }
+//    public void saveBarcodesFromInnerStock(XSSFRow row, String nameSupplier) throws SQLException {
+//        String productCodeString = "";
+//        if(row.getCell(0) != null && row.getCell(0).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+//            Double productCode = row.getCell(0).getNumericCellValue();
+//            productCodeString = String.format("%.0f", productCode);
+//        }
+//        else if(row.getCell(0) != null && row.getCell(0).getCellType() == HSSFCell.CELL_TYPE_STRING){
+//            productCodeString = row.getCell(0).toString();
+//        }
+//
+//        String producerString = "";
+//        if(row.getCell(10) != null && row.getCell(10).getCellType() == HSSFCell.CELL_TYPE_STRING){
+//            producerString = row.getCell(10).toString();
+//            System.out.println("producerString : " + producerString);
+//        }
+//
+//        String productBarcodeString = "";
+//        if(row.getCell(11) != null && row.getCell(11).getCellType() == HSSFCell.CELL_TYPE_STRING){
+//            productBarcodeString = row.getCell(11).toString();
+//        }
+//
+//        if(!productCodeString.isEmpty() && !productBarcodeString.isEmpty() && producerString.equals(nameSupplier)) {
+//            ProductInStock product = new ProductInStock();
+//            product.getProduct(productCodeString);
+//            productBarcodeString = productBarcodeString.replaceAll(",", "\r\n");
+//            product.setBarcode(productBarcodeString);
+//            product.updateProduct();
+//        }
+//    }
 
 
 
