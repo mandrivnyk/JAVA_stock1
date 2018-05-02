@@ -91,8 +91,8 @@ public class ProductsBarcodes {
             if(barcodesArray.length > 0){
                 for (String barcode: barcodesArray) {
                     setProductID(productId);
-                    setProduct_code(product_code);
-                    setBarcode(barcode);
+                    setProduct_code(product_code.trim());
+                    setBarcode(barcode.trim());
                     save();
                 }
             }

@@ -9,10 +9,12 @@ import java.util.List;
 public interface Supplier {
 
      enum Name {
-        TERRA_INCOGNITA,
-        GORGANY,
-        TRAMP,
-        SHAMBALA
+         TERRA_INCOGNITA,
+         GORGANY,
+         TRAMP,
+         SHAMBALA,
+         ELAN,
+         TRAVEL_EXTREME
     }
 
     List<String> supplierBrends = new ArrayList<>();

@@ -14,12 +14,14 @@ import java.util.List;
 public class App {
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException, IOException {
 
-        String pathToInnerSkladFile = "D:/Sklad_2017.xlsx";
+        String pathToInnerSkladFile = "D:/SKLAD/Sklad_2017.xlsx";
         String pathToJsonFolder = "D:/JSON/";
-        String pathToTerraIncognitaStock = "D:/terra-rest.xlsx";
-        String pathToTerraIncognitaExisting = "D:/terra-barcodes.xlsx";
-        String pathToTrampStock = "D:/tramp-rest.xlsx";
-        String pathToTrampExisting = "D:/tramp-barcodes.xlsx";
+        String pathToTerraIncognitaStock = "D:/SKLAD/terra-rest.xlsx";
+        String pathToTerraIncognitaExisting = "D:/SKLAD/terra-barcodes.xlsx";
+        String pathToTrampStock = "D:/SKLAD/tramp-rest.xlsx";
+        String pathToTrampExisting = "D:/SKLAD/tramp-barcodes.xlsx";
+        String pathToGorganyStock = "D:/SKLAD/gorgany-rest.xlsx";
+        String pathToGorganyExisting = "D:/SKLAD/Lasting-barcodes.xlsx";
 
         ProductsVariants productsVariants = new ProductsVariants();
         productsVariants.truncateProductsVariants();
@@ -35,8 +37,9 @@ public class App {
         UpdaterFascade updaterFascade = new UpdaterFascade();
         ProductsBarcodes productsBarcodes = new ProductsBarcodes();
         productsBarcodes.saveBarcodesFromProductsTable();
-//        updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, Supplier.Name.TERRA_INCOGNITA.toString());
-//        updaterFascade.saveOuterStock(pathToTrampStock, pathToTrampExisting, Supplier.Name.TRAMP.toString());
+        updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, Supplier.Name.TERRA_INCOGNITA.toString());
+        updaterFascade.saveOuterStock(pathToTrampStock, pathToTrampExisting, Supplier.Name.TRAMP.toString());
+        updaterFascade.saveOuterStock(pathToGorganyStock, pathToGorganyExisting, Supplier.Name.GORGANY.toString());
 
         updaterFascade.InnerStock(pathToInnerSkladFile);
         genJson.process();

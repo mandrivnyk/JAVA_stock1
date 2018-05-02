@@ -10,6 +10,9 @@ public class CreatorSupplier implements Creator {
        if(name.equals(Supplier.Name.TRAMP.toString())) {
            return new SupplierTramp();
        }
+       if(name.equals(Supplier.Name.GORGANY.toString())) {
+           return new SupplierGorgany();
+       }
         return null;
     }
 }

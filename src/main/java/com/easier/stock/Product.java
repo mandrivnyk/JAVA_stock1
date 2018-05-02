@@ -46,6 +46,10 @@ public interface Product {
 
     void setPriceRRZ(double priceRRZ);
 
+    double getListPrice();
+
+    void setListPrice(double listPrice);
+
     double getPriceSpec();
 
     void setPriceSpec(double priceSpec);

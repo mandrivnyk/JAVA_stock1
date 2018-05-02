@@ -142,8 +142,7 @@ public class UpdaterFascade {
                     product.setPriceRRZ(rs.getInt("price"));
                 }
 
-
-
+                product.setListPrice(0);
                 product.setInStock(inStockNum);
                 product.setSortOrder(sortOrder);
                 product.updateProduct();

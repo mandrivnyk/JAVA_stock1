@@ -17,6 +17,7 @@ public class ProductInStock implements Product {
     private String barcode;
     private String brend;
     private double priceRRZ;
+    private double listPrice;
     private double priceSpec;
     private double priceOpt;
     private int year;
@@ -148,6 +149,16 @@ public class ProductInStock implements Product {
         this.priceRRZ = priceRRZ;
     }
 
+    @Override
+    public double getListPrice() {
+        return listPrice;
+    }
+
+    @Override
+    public void setListPrice(double listPrice) {
+        this.listPrice = listPrice;
+    }
+
     public double getPriceSpec() {
         return priceSpec;
     }
@@ -191,16 +202,17 @@ public class ProductInStock implements Product {
     public void updateProduct() throws SQLException {
         String updateString =
                 "UPDATE SS_products " +
-                       "set product_code = ?, barcodes = ?, producer = ?, name = ?, Price = ?, in_stock= ?, sort_order = ?  where productID = ?";
+                       "set product_code = ?, barcodes = ?, producer = ?, name = ?, Price = ?, list_price = ?, in_stock= ?, sort_order = ?  where productID = ?";
         PreparedStatement updateProductInStock = conn.prepareStatement(updateString);
         updateProductInStock.setString(1,  getProductCode());
         updateProductInStock.setString(2,  getBarcode());
         updateProductInStock.setString(3,  getBrend());
         updateProductInStock.setString(4,  getName());
         updateProductInStock.setDouble(5,  getPriceRRZ());
-        updateProductInStock.setInt(6,  getInStock());
-        updateProductInStock.setInt(7, getSortOrder());
-        updateProductInStock.setInt(8, getProductID());
+        updateProductInStock.setDouble(6,  getListPrice());
+        updateProductInStock.setInt(7,  getInStock());
+        updateProductInStock.setInt(8, getSortOrder());
+        updateProductInStock.setInt(9, getProductID());
 
         updateProductInStock.executeUpdate();
     }
