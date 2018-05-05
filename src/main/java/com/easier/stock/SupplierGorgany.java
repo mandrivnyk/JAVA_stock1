@@ -145,10 +145,10 @@ public class SupplierGorgany implements Supplier{
 
     @Override
     public List createListExisting(List<XSSFRow> data) throws SQLException {
-        int productNameCell = 2;
+        int productNameCell = 1;
         int vendorCodeCell = 0;
-        int productColorCell = 4;
-        int moreInfoCell = 3;
+        int productColorCell = 3;
+        int moreInfoCell = 2;
 
 
         List<Product> list = new ArrayList<Product>();

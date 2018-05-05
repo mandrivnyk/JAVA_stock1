@@ -71,37 +71,40 @@ public class UpdaterFascade {
     }
 
 
-    public List<Product> OuterExisting(String pathToFile, String nameSupplier) throws IOException {
+    public List<Product> OuterExisting(String pathToFileArr[], String nameSupplier) throws IOException {
         List<XSSFRow> data;
         List<Product> outerExistingSupplierList = new ArrayList<Product>();
 
         ExcelParcer excelParcer = new ExcelParcer();
-        int numberOfSheets = excelParcer.getNumberOfSheets(pathToFile);
+        for( String pathToFile : pathToFileArr){
+            int numberOfSheets = excelParcer.getNumberOfSheets(pathToFile);
 
-        CreatorSupplier creatorSupplier = new CreatorSupplier();
-        Supplier supplier = creatorSupplier.create(nameSupplier);
+            CreatorSupplier creatorSupplier = new CreatorSupplier();
+            Supplier supplier = creatorSupplier.create(nameSupplier);
 
-        for(int i = 0; i< numberOfSheets; i++) {
-            try {
-                data = excelParcer.readFromExcelNewVersions(pathToFile, i);
-                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ dataFromFile.size() = "+data.size());
+            for(int i = 0; i< numberOfSheets; i++) {
+                try {
+                    data = excelParcer.readFromExcelNewVersions(pathToFile, i);
+                    System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ dataFromFile.size() = "+data.size());
 
-                outerExistingSupplierList = supplier.createListExisting(data);
+                    outerExistingSupplierList.addAll(supplier.createListExisting(data));
 
-                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Result ");
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
+                    System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Result ");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
         }
+
         return outerExistingSupplierList;
     }
 
-    public void saveOuterStock(String pathToSupplierStock, String pathToSupplierExisting, String nameSupplier) throws IOException, SQLException {
+    public void saveOuterStock(String pathToSupplierStock, String pathToSupplierExisting[], String nameSupplier) throws IOException, SQLException {
 
         List<Product> outerExisting = new ArrayList<>();
-        if(pathToSupplierExisting != null && !pathToSupplierExisting.isEmpty()){
+        if(pathToSupplierExisting != null && pathToSupplierExisting.length >0){
             outerExisting = OuterExisting(pathToSupplierExisting, nameSupplier);
         }
 
