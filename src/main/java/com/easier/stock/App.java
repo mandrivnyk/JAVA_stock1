@@ -14,16 +14,18 @@ import java.util.List;
 public class App {
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException, IOException {
         String pathToSkladFolder = "D:/__SKLAD/";
-        String pathToInnerSkladFile = pathToSkladFolder+"Sklad_2017.xlsx";
-        String pathToJsonFolder = pathToSkladFolder+"JSON/";
-        String pathToTerraIncognitaStock = pathToSkladFolder+"terra-rest.xlsx";
-        String pathToTerraIncognitaExisting[] = {pathToSkladFolder+"terra-barcodes.xlsx"};
-        String pathToTrampStock = pathToSkladFolder+"tramp-rest.xlsx";
-        String pathToTrampExisting[] = {pathToSkladFolder+"tramp-barcodes.xlsx"};
-        String pathToGorganyStock = pathToSkladFolder+"gorgany-rest.xlsx";
-        String pathToGorganyExisting[] = {  pathToSkladFolder+"lasting-barcodes.xlsx",
-                                            pathToSkladFolder+"osprey-barcodes.xlsx",
-                                            pathToSkladFolder+"salewa-barcodes.xlsx",
+        String barcodesString = "barcodes/";
+        String pathToInnerSkladFile = pathToSkladFolder + "Sklad_2017.xlsx";
+        String pathToJsonFolder = pathToSkladFolder + "JSON/";
+        String pathToTerraIncognitaStock = pathToSkladFolder + "terra-rest.xlsx";
+        String pathToTerraIncognitaExisting[] = {pathToSkladFolder + barcodesString + "terra-barcodes.xlsx"};
+        String pathToTrampStock = pathToSkladFolder + "tramp-rest.xlsx";
+        String pathToTrampExisting[] = {pathToSkladFolder + barcodesString + "tramp-barcodes.xlsx"};
+        String pathToGorganyStock = pathToSkladFolder + "gorgany-rest.xlsx";
+        String pathToGorganyExisting[] = {  pathToSkladFolder + barcodesString + "lasting-barcodes.xlsx",
+                                            pathToSkladFolder + barcodesString + "osprey-barcodes.xlsx",
+                                            pathToSkladFolder + barcodesString + "salewa-barcodes.xlsx",
+                                            pathToSkladFolder + barcodesString + "turbat-barcodes.xlsx",
         };
 
         ProductsVariants productsVariants = new ProductsVariants();
