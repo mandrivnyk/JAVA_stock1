@@ -49,6 +49,7 @@ public class Supplier implements iSupplier {
         }
         return   AttributeString;
     }
+
     protected Double getAttributelNumeric(XSSFRow row, int productAttributeCell){
         Double attribute = 0.0;
         if(row.getCell(productAttributeCell) != null && row.getCell(productAttributeCell).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
