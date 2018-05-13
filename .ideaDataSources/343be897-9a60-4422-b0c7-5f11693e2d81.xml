@@ -1846,7 +1846,7 @@ productID</ColNames>
     </column>
     <column id="439" parent="50" name="barcode">
       <Position>8</Position>
-      <DataType>bigint(20)|0</DataType>
+      <DataType>varchar(2000)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="440" parent="50" name="producer">

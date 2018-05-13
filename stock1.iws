@@ -3,22 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="730793f8-0c52-4036-b47a-297214275d30" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/easier/stock/App.class" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/easier/stock/ConnectionDB.class" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/ConnectionDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/easier/stock/GenProductsVariantsJSON.class" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/GenProductsVariantsJSON.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/easier/stock/ExcelParcer.class" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/ExcelParcer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/easier/stock/Product.class" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/Product.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/easier/stock/ProductInStock.class" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/ProductInStock.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/easier/stock/ProductsVariants.class" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/ProductsVariants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/easier/stock/Updater.class" afterPath="$PROJECT_DIR$/target/classes/com/easier/stock/Updater.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/ConnectionDB.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/ConnectionDB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/CreatorSupplier.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/CreatorSupplier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/GenProductsVariantsJSON.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/GenProductsVariantsJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTerraIncognita.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTerraIncognita.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java" afterPath="$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ideaDataSources/343be897-9a60-4422-b0c7-5f11693e2d81.xml" afterPath="$PROJECT_DIR$/.ideaDataSources/343be897-9a60-4422-b0c7-5f11693e2d81.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stock1.iws" afterPath="$PROJECT_DIR$/stock1.iws" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/stock1$App.coverage" NAME="App Coverage Results" MODIFIED="1509647860030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/stock1$App.coverage" NAME="App Coverage Results" MODIFIED="1525958161107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.easier.stock.*</FILTER>
     </SUITE>
   </component>
@@ -48,66 +36,17 @@
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="tatonka@192.168.1.69" type="e3449647:DbNodeDescriptor" />
       </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="tatonka@192.168.1.69" type="e3449647:DbNodeDescriptor" />
-        <item name="tatonka" type="e3449647:DbNodeDescriptor" />
-      </path>
-      <path>
-        <item name="" type="eadb38e5:DatabaseStructure$Root" />
-        <item name="tatonka@192.168.1.69" type="e3449647:DbNodeDescriptor" />
-        <item name="tatonka" type="e3449647:DbNodeDescriptor" />
-        <item name="SS_products_variants" type="e3449647:DbNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductInStock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductInStock.java">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="177" column="86" lean-forward="false" selection-start-line="177" selection-start-column="40" selection-end-line="177" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getSize#0;class#ProductInStock#0" expanded="false" />
-                <element signature="method#getColor#0;class#ProductInStock#0" expanded="false" />
-                <marker date="1523527803065" expanded="true" signature="3673:3736" ph="SELECT * FRO... SS_products" />
-                <marker date="1523527803065" expanded="true" signature="4279:4445" ph="UPDATE SS_pr... " />
-                <marker date="1523527803065" expanded="true" signature="5501:5616" ph="UPDATE SS_pr... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SS_products_variants" pinned="false" current-in-tab="false">
-        <entry file="das://table:/stock132247a6b/343be897-9a60-4422-b0c7-5f11693e2d81/tatonka.SS_products_variants">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/343be897-9a60-4422-b0c7-5f11693e2d81/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+            <state relative-caret-position="714">
+              <caret line="43" column="67" lean-forward="true" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SupplierTramp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -115,57 +54,44 @@
       <file leaf-file-name="ConnectionDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ConnectionDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="408">
+              <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/App.java">
+      <file leaf-file-name="SupplierGorgany.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierGorgany.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdaterFascade.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+            <state relative-caret-position="414">
+              <caret line="65" column="2" lean-forward="true" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#OuterExisting#0;class#UpdaterFascade#0" expanded="false" />
-                <element signature="method#UpdaterPriceLasting#0;class#UpdaterFascade#0" expanded="false" />
+                <marker date="1526236394437" expanded="false" signature="3622:3631" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelParcer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java">
+      <file leaf-file-name="SupplierElan.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierElan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="397">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="56" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Updater.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java">
+      <file leaf-file-name="ProductInStock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductInStock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="340">
+              <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
-                <element signature="e#1418#1518#0" expanded="false" />
-                <element signature="method#priceLasting#0;class#Updater#0" expanded="false" />
-                <element signature="e#3004#3014#0" expanded="false" />
-                <element signature="method#onlyQuantity#0;class#Updater#0" expanded="false" />
+                <marker date="1526206966549" expanded="true" signature="3859:3922" ph="SELECT * FRO... SS_products" />
+                <marker date="1526206966549" expanded="true" signature="4465:4647" ph="UPDATE SS_pr... " />
+                <marker date="1526206966549" expanded="true" signature="5764:5879" ph="UPDATE SS_pr... " />
               </folding>
             </state>
           </provider>
@@ -174,8 +100,50 @@
       <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="59" column="9" lean-forward="false" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+            <state relative-caret-position="425">
+              <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Supplier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Supplier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreatorSupplier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/CreatorSupplier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupplierTerraIncognita.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTerraIncognita.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupplierTramp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="754">
+              <caret line="85" column="31" lean-forward="true" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -194,8 +162,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TRA-024</find>
-      <find>GKU</find>
       <find>thermo</find>
       <find>Snow</find>
       <find>duo</find>
@@ -224,6 +190,8 @@
       <find>createListExisting</find>
       <find>priceRRZCell</find>
       <find>TRT-106.04</find>
+      <find>price</find>
+      <find>XSSFWorkbook</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -256,32 +224,35 @@
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e49317b5-7723-47c1-a3d7-08e416ec1b8c/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f128b72a-8fd1-4936-9ed2-7c2f802c1b1e/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/55d9d8d1-7cce-459e-b0b1-eafd22f6e44c/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/OuterStockTerraIncognita.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/OuterStock.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/343be897-9a60-4422-b0c7-5f11693e2d81/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsBarcodes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/CreatorBrend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/Creator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductInStock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierLasting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/Brend.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/Supplier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTerraIncognita.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/CreatorSupplier.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/GenProductsVariantsJSON.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ConnectionDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/App.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/343be897-9a60-4422-b0c7-5f11693e2d81/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsBarcodes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/ProductInStock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/Brend.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/343be897-9a60-4422-b0c7-5f11693e2d81/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/CreatorSupplier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/iSupplier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierElan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierGorgany.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/Supplier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTerraIncognita.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/easier/stock/App.java" />
       </list>
     </option>
   </component>
@@ -329,6 +300,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -337,13 +311,36 @@
               <item name="stock1" type="b2602c69:ProjectViewProjectNode" />
               <item name="stock1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="stock1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stock1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stock1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stock1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stock1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stock1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stock1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stock1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stock" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,17 +359,20 @@
     <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\W520\Dropbox\workspace\stock1\src\main\resources" />
-      <recent name="C:\Users\W520\Dropbox\workspace\stock1\src\main\java\config" />
-      <recent name="C:\Users\W520\Dropbox\workspace\stock1\src\resources" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easier.stock" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\W520\Dropbox\workspace\stock1\src\main\java\com\easier\stock" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
       <recent name="models" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\W520\Dropbox\workspace\stock1\src\main\resources" />
+      <recent name="C:\Users\W520\Dropbox\workspace\stock1\src\main\java\config" />
+      <recent name="C:\Users\W520\Dropbox\workspace\stock1\src\resources" />
       <recent name="C:\Users\W520\Dropbox\workspace\stock1\src\main\java\com\easier\stock" />
     </key>
   </component>
@@ -565,7 +565,21 @@
       <workItem from="1524209360014" duration="3764000" />
       <workItem from="1524224082247" duration="9788000" />
       <workItem from="1524240155278" duration="1096000" />
-      <workItem from="1524389869029" duration="994000" />
+      <workItem from="1524389869029" duration="1685000" />
+      <workItem from="1524466493256" duration="2858000" />
+      <workItem from="1524575910588" duration="4084000" />
+      <workItem from="1524640651553" duration="10142000" />
+      <workItem from="1525271091590" duration="5658000" />
+      <workItem from="1525516842354" duration="7101000" />
+      <workItem from="1525691420211" duration="1101000" />
+      <workItem from="1525764399010" duration="12510000" />
+      <workItem from="1525793016357" duration="597000" />
+      <workItem from="1525937082363" duration="8545000" />
+      <workItem from="1525957609222" duration="681000" />
+      <workItem from="1525958313643" duration="2679000" />
+      <workItem from="1526038245318" duration="3926000" />
+      <workItem from="1526206265572" duration="3480000" />
+      <workItem from="1526235212619" duration="6459000" />
     </task>
     <task id="LOCAL-00001" summary="fixed bug">
       <created>1521025337484</created>
@@ -616,11 +630,53 @@
       <option name="project" value="LOCAL" />
       <updated>1523964307445</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed bug with priseRRZ Terra Incognita">
+      <created>1524390912801</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1524390912801</updated>
+    </task>
+    <task id="LOCAL-00009" summary="brend Lasting done">
+      <created>1525277642044</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1525277642044</updated>
+    </task>
+    <task id="LOCAL-00010" summary="brend Osprey, Salewa done">
+      <created>1525523906546</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1525523906546</updated>
+    </task>
+    <task id="LOCAL-00011" summary="brend AP, Zamberlan, Trimm done">
+      <created>1525788276481</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1525788276481</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added abstract Supplier, started refactoring">
+      <created>1526209725673</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1526209725673</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactored">
+      <created>1526242042380</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1526242042380</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352267000" />
+    <option name="totallyTimeSpent" value="422779000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -632,31 +688,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.83821934" sideWeight="0.34061834" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10714286" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17287917" sideWeight="0.490099" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1748401" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17270789" sideWeight="0.490099" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17270789" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46018893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14766558" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2240216" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22366993" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1808367" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25841478" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12269273" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18132465" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2780027" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19829424" sideWeight="0.27272728" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29419702" sideWeight="0.6593817" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21079692" sideWeight="0.7275902" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24253732" sideWeight="0.7275902" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19829424" sideWeight="0.27240977" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -667,8 +722,9 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1337953" sideWeight="0.509901" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6666667" sideWeight="0.6593817" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8414767" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -676,34 +732,34 @@
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13897938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40282303" sideWeight="0.5021322" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.83821934" sideWeight="0.34061834" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10714286" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1337953" sideWeight="0.490099" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17004265" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17270789" sideWeight="0.490099" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17270789" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44191095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14766558" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26058632" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22366993" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48425624" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51140064" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2388708" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18132465" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1337953" sideWeight="0.509901" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2790445" sideWeight="0.48933902" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2780027" sideWeight="0.48933902" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19829424" sideWeight="0.27272728" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5559175" sideWeight="0.48347548" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21481876" sideWeight="0.7275902" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6666667" sideWeight="0.6593817" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24253732" sideWeight="0.7275902" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19829424" sideWeight="0.27240977" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8414767" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -759,22 +815,21 @@
     <MESSAGE value="added brands to supplier" />
     <MESSAGE value="finished with supplier Terra Incognita and began Tramp" />
     <MESSAGE value="fixed bug with priseRRZ Terra Incognita" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug with priseRRZ Terra Incognita" />
+    <MESSAGE value="brend Lasting done" />
+    <MESSAGE value="brend Osprey, Salewa done" />
+    <MESSAGE value="brend AP, Zamberlan, Trimm done" />
+    <MESSAGE value="added abstract Supplier, started refactoring" />
+    <MESSAGE value="refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTerraIncognita.java</url>
-          <line>132</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java</url>
-          <line>90</line>
-          <properties />
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsBarcodes.java</url>
@@ -784,7 +839,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/App.java</url>
-          <line>47</line>
+          <line>57</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
@@ -820,67 +875,55 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java</url>
-          <line>123</line>
+          <line>121</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductInStock.java</url>
-          <line>214</line>
+          <line>225</line>
           <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTerraIncognita.java</url>
-          <line>69</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java</url>
-          <line>107</line>
-          <properties />
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java</url>
-          <line>62</line>
+          <line>57</line>
           <properties />
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java</url>
-          <line>64</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductInStock.java</url>
-          <line>211</line>
+          <line>222</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java</url>
-          <line>113</line>
+          <line>111</line>
           <properties />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java</url>
-          <line>70</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java</url>
-          <line>137</line>
+          <line>135</line>
           <properties />
           <option name="timeStamp" value="112" />
         </line-breakpoint>
@@ -890,21 +933,83 @@
           <properties />
           <option name="timeStamp" value="113" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java</url>
-          <line>51</line>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java</url>
+          <line>149</line>
           <properties />
-          <option name="timeStamp" value="115" />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java</url>
+          <line>130</line>
+          <properties />
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierElan.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierElan.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierGorgany.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierGorgany.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="141" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="116" />
+      <option name="time" value="142" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="myExcelSheet.getPhysicalNumberOfRows()" language="JAVA" />
+        <watch expression="row != null" language="JAVA" />
+        <watch expression="row.getCell(barcodeCell) != null" language="JAVA" />
+        <watch expression="row.getCell(barcodeCell).getCellType() == HSSFCell.CELL_TYPE_NUMERIC" language="JAVA" />
+        <watch expression="row.getCell(priceRRZCell) != null" language="JAVA" />
+        <watch expression="row.getCell(priceRRZCell).getCellType() == HSSFCell.CELL_TYPE_NUMERIC" language="JAVA" />
+        <watch expression="getProductAttributeFromCellNumeric(row, priceOptCell)" language="JAVA" />
+        <watch expression="row.getCell(productAttributeCell).getNumericCellValue()" language="JAVA" />
+        <watch expression="row.getCell(productAttributeCell)" language="JAVA" />
+        <watch expression="row.getCell(productAttributeCell).getCellType()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -913,48 +1018,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.8-dmr/mysql-connector-java-8.0.8-dmr-sources.jar!/com/mysql/cj/core/conf/url/ConnectionUrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.8-dmr/mysql-connector-java-8.0.8-dmr-sources.jar!/com/mysql/cj/jdbc/NonRegisteringDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/stock132247a6b/e49317b5-7723-47c1-a3d7-08e416ec1b8c/tatonka.SS_products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e49317b5-7723-47c1-a3d7-08e416ec1b8c/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/stock132247a6b/f128b72a-8fd1-4936-9ed2-7c2f802c1b1e/tatonka.SS_products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e49317b5-7723-47c1-a3d7-08e416ec1b8c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/stock132247a6b/e49317b5-7723-47c1-a3d7-08e416ec1b8c/tatonka.SS_product_top_sale">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -966,13 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.12/poi-ooxml-3.12.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1036,21 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsBarcodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/stock132247a6b/343be897-9a60-4422-b0c7-5f11693e2d81/tatonka.SS_products_barcodes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1139,37 +1180,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Creator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/CreatorBrend.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierLasting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/stock132247a6b/343be897-9a60-4422-b0c7-5f11693e2d81/tatonka.SS_prod_brends">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Brend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/stock132247a6b/343be897-9a60-4422-b0c7-5f11693e2d81/tatonka.SS_products">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1197,14 +1209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/CreatorSupplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/FileWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -1216,48 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="99" column="11" lean-forward="false" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/GenProductsVariantsJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTerraIncognita.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="132" column="20" lean-forward="false" selection-start-line="91" selection-start-column="6" selection-end-line="132" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <marker date="1523965505122" expanded="true" signature="488:548" ph="SELECT * FRO... SS_products_variants" />
-            <marker date="1523965505122" expanded="true" signature="755:840" ph="SELECT * FRO... SS_products_variants" />
-            <marker date="1523965505122" expanded="true" signature="1030:1169" ph="SELECT * FRO... SS_products_variants" />
-            <marker date="1523965505122" expanded="true" signature="1307:1380" ph="UPDATE SS_pr... " />
-            <marker date="1523965505122" expanded="true" signature="1800:1891" ph="UPDATE SS_pr... " />
-            <marker date="1523965505122" expanded="true" signature="4953:5088" ph="INSERT INTO SS_products_variants... " />
-            <marker date="1523965505122" expanded="true" signature="5879:6014" ph="INSERT INTO SS_products_variants... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1275,14 +1237,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ConnectionDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -1290,39 +1244,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Product.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Creator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="59" column="9" lean-forward="false" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductInStock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="177" column="86" lean-forward="false" selection-start-line="177" selection-start-column="40" selection-end-line="177" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getSize#0;class#ProductInStock#0" expanded="false" />
-            <element signature="method#getColor#0;class#ProductInStock#0" expanded="false" />
-            <marker date="1523527803065" expanded="true" signature="3673:3736" ph="SELECT * FRO... SS_products" />
-            <marker date="1523527803065" expanded="true" signature="4279:4445" ph="UPDATE SS_pr... " />
-            <marker date="1523527803065" expanded="true" signature="5501:5616" ph="UPDATE SS_pr... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierLasting.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Updater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1336,30 +1265,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/App.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.12/poi-3.12.jar!/org/apache/poi/ss/usermodel/Cell.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java">
+    <entry file="das://table:/stock132247a6b/343be897-9a60-4422-b0c7-5f11693e2d81/tatonka.SS_products_barcodes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsBarcodes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        <state relative-caret-position="192">
+          <caret line="93" column="55" lean-forward="false" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#OuterExisting#0;class#UpdaterFascade#0" expanded="false" />
-            <element signature="method#UpdaterPriceLasting#0;class#UpdaterFascade#0" expanded="false" />
+            <marker date="1524645830465" expanded="true" signature="954:1038" ph="INSERT INTO SS_products_barcodes... " />
+            <marker date="1524645830465" expanded="true" signature="1486:1543" ph="SELECT * FRO... SS_products_barcodes" />
+            <marker date="1524645830465" expanded="true" signature="1730:1797" ph="SELECT * FRO... SS_products_barcodes" />
+            <marker date="1524645830465" expanded="true" signature="1988:2062" ph="SELECT produ... SS_products_barcodes" />
+            <marker date="1524645830465" expanded="true" signature="2252:2315" ph="SELECT * FRO... SS_products_barcodes" />
+            <marker date="1524645830465" expanded="true" signature="2538:2639" ph="SELECT produ... SS_products" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductsVariants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="2142">
+          <caret line="130" column="74" lean-forward="false" selection-start-line="130" selection-start-column="62" selection-end-line="130" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -1371,10 +1309,168 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/GenProductsVariantsJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.12/poi-ooxml-3.12.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="85" column="25" lean-forward="false" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Brend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ExcelParcer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/UpdaterFascade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="method#UpdaterPriceLasting#0;class#UpdaterFascade#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.12/poi-ooxml-3.12.jar!/org/apache/poi/xssf/usermodel/XSSFCell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4777">
+          <caret line="323" column="0" lean-forward="true" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/stock132247a6b/343be897-9a60-4422-b0c7-5f11693e2d81/tatonka.SS_products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/343be897-9a60-4422-b0c7-5f11693e2d81/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="136">
+          <caret line="8" column="151" lean-forward="false" selection-start-line="8" selection-start-column="151" selection-end-line="8" selection-end-column="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/iSupplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="68" lean-forward="false" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ConnectionDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/ProductInStock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <marker date="1526206966549" expanded="true" signature="3859:3922" ph="SELECT * FRO... SS_products" />
+            <marker date="1526206966549" expanded="true" signature="4465:4647" ph="UPDATE SS_pr... " />
+            <marker date="1526206966549" expanded="true" signature="5764:5879" ph="UPDATE SS_pr... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/CreatorSupplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierElan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="56" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTerraIncognita.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierGorgany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="65" column="2" lean-forward="true" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
+          <folding>
+            <marker date="1526236394437" expanded="false" signature="3622:3631" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/SupplierTramp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="85" column="31" lean-forward="true" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/easier/stock/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="43" column="67" lean-forward="true" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
           <folding />
         </state>
       </provider>
