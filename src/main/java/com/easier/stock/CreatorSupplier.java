@@ -2,7 +2,7 @@ package com.easier.stock;
 
 public class CreatorSupplier implements Creator {
 
-    public Supplier create(String name) {
+    public iSupplier create(String name) {
 
        if(name.equals(Supplier.Name.TERRA_INCOGNITA.toString())) {
            return new SupplierTerraIncognita();
@@ -13,6 +13,9 @@ public class CreatorSupplier implements Creator {
        if(name.equals(Supplier.Name.GORGANY.toString())) {
            return new SupplierGorgany();
        }
+        if(name.equals(Supplier.Name.ELAN.toString())) {
+            return new SupplierElan();
+        }
         return null;
     }
 }

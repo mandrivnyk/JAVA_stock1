@@ -4,5 +4,5 @@ public interface Creator {
 
 
 
-    Supplier create(String name);
+    iSupplier create(String name);
 }

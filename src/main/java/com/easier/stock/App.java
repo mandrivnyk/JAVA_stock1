@@ -1,11 +1,8 @@
 package com.easier.stock;
 
 
-import org.apache.poi.xssf.usermodel.XSSFRow;
-
 import java.io.*;
 import java.sql.*;
-import java.util.List;
 
 /**
  * Hello world!
@@ -26,7 +23,14 @@ public class App {
                                             pathToSkladFolder + barcodesString + "osprey-barcodes.xlsx",
                                             pathToSkladFolder + barcodesString + "salewa-barcodes.xlsx",
                                             pathToSkladFolder + barcodesString + "turbat-barcodes.xlsx",
+                                            pathToSkladFolder + barcodesString + "alpine-pro-barcodes.xlsx",
+                                            pathToSkladFolder + barcodesString + "AustriAlpin-barcodes.xlsx",
+                                            pathToSkladFolder + barcodesString + "esbit-barcodes.xlsx",
+                                            pathToSkladFolder + barcodesString + "wind-xtreme-barcodes.xlsx",
+                                            pathToSkladFolder + barcodesString + "zamberlan-barcodes.xlsx",
         };
+        String pathToElanStock = pathToSkladFolder + "elan-rest.xlsx";
+        String pathToElanExisting[] = {};
 
         ProductsVariants productsVariants = new ProductsVariants();
         productsVariants.truncateProductsVariants();
@@ -34,17 +38,15 @@ public class App {
         GenProductsVariantsJSON genJson = new GenProductsVariantsJSON(pathToJsonFolder);
         genJson.purgeDirectory(new File(pathToJsonFolder));
 
-//        ProductInStock product = new ProductInStock();
-//        product.getProduct("alfa_3");
-//        product.addBarcodeIntoProduct("test");
-//        product.updateProduct();
+
 
         UpdaterFascade updaterFascade = new UpdaterFascade();
         ProductsBarcodes productsBarcodes = new ProductsBarcodes();
         productsBarcodes.saveBarcodesFromProductsTable();
 //        updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, Supplier.Name.TERRA_INCOGNITA.toString());
 //        updaterFascade.saveOuterStock(pathToTrampStock, pathToTrampExisting, Supplier.Name.TRAMP.toString());
-        updaterFascade.saveOuterStock(pathToGorganyStock, pathToGorganyExisting, Supplier.Name.GORGANY.toString());
+//        updaterFascade.saveOuterStock(pathToGorganyStock, pathToGorganyExisting, Supplier.Name.GORGANY.toString());
+        updaterFascade.saveOuterStock(pathToElanStock, pathToElanExisting, Supplier.Name.ELAN.toString());
 
         updaterFascade.InnerStock(pathToInnerSkladFile);
         genJson.process();

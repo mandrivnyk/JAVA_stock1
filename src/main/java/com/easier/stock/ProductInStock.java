@@ -2,7 +2,6 @@ package com.easier.stock;
 
 import java.sql.*;
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class ProductInStock implements Product {
     private int productID;
@@ -220,7 +219,7 @@ public class ProductInStock implements Product {
     public static void setInStockAll(int inStock, int sortOrder, String nameSupplier) throws SQLException {
         Connection conn = ConnectionDB.getInstance().getConn();
         CreatorSupplier creatorSupplier = new CreatorSupplier();
-        Supplier supplier = creatorSupplier.create(nameSupplier);
+        iSupplier supplier = creatorSupplier.create(nameSupplier);
         List<String> brends = supplier.getSupplierBrends();
 
         for (String brend: brends) {

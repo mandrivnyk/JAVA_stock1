@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-public class SupplierTerraIncognita implements Supplier {
+public class SupplierTerraIncognita extends Supplier implements iSupplier {
 
 
 
@@ -23,13 +23,9 @@ public class SupplierTerraIncognita implements Supplier {
         supplierBrends.add(Brend.KAYLAND);
     }
 
-    public List<String> getSupplierBrends() {
-        return supplierBrends;
-    }
 
     public List<Product> createListStock(List<XSSFRow> data, List<Product> outerExisting) throws SQLException {
         List<Product> list = new ArrayList<>();
-        ProductsBarcodes productsBarcodes = new ProductsBarcodes();
         for (XSSFRow row : data) {
             if(row != null && row.getCell(3) != null && row.getCell(3).getCellType() == HSSFCell.CELL_TYPE_NUMERIC && row.getCell(11) != null && row.getCell(11).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
                 Product product = new ProductInStock();
@@ -40,17 +36,9 @@ public class SupplierTerraIncognita implements Supplier {
                 }
                 if(row.getCell(3) != null && row.getCell(3).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
                     Double barcode = row.getCell(3).getNumericCellValue();
-                    String barcodeString = String.format("%.0f", barcode);
-                    product.setBarcode(barcodeString);
-                    try {
-                        ResultSet rs = productsBarcodes.getProductCode(barcodeString);
-                        if(rs.next()) {
-                            String product_code = rs.getString("product_code");
-                            product.setProductCode(product_code);
-                        }
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
+                    String barCodeString = String.format("%.0f", barcode);
+                    product.setBarcode(barCodeString);
+                    product.setProductCode(getProductCode(barCodeString));
                 }
 
                 if(row.getCell(4) != null && row.getCell(4).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){

@@ -29,4 +29,16 @@ public interface Brend {
     String AUSTRIALPIN      = "AustriAlpin";
     String TREKMATES        = "Trekmates";
     String ROCKTECHNOLOGIES = "Rock Technologies";
+
+    String CRAFT            = "Craft";
+    String X_SOCKS          = "X-Socks";
+    String X_BIONIC         = "X-Bionic";
+    String DAINESE          = "Dainese";
+    String BOLLE            = "Bolle";
+    String REUSCH           = "Reusch";
+    String OAKLEY           = "Oakley";
+    String ELAN             = "Elan";
+    String TREKSTA          = "Treksta";
+    String DOLOMITE         = "Dolomite";
+    String THE_NORTH_FACE   = "The North Face";
 }

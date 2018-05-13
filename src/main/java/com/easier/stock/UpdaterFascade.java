@@ -2,16 +2,11 @@ package com.easier.stock;
 
 import org.apache.poi.xssf.usermodel.XSSFRow;
 
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonArrayBuilder;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 public class UpdaterFascade {
 
@@ -55,7 +50,7 @@ public class UpdaterFascade {
         int numberOfSheets = excelParcer.getNumberOfSheets(pathToFile);
 
         CreatorSupplier creatorSupplier = new CreatorSupplier();
-        Supplier supplier = creatorSupplier.create(nameSupplier);
+        iSupplier supplier = creatorSupplier.create(nameSupplier);
 
        // for(int i = 0; i< numberOfSheets; i++) {
             try {
@@ -80,7 +75,7 @@ public class UpdaterFascade {
             int numberOfSheets = excelParcer.getNumberOfSheets(pathToFile);
 
             CreatorSupplier creatorSupplier = new CreatorSupplier();
-            Supplier supplier = creatorSupplier.create(nameSupplier);
+            iSupplier supplier = creatorSupplier.create(nameSupplier);
 
             for(int i = 0; i< numberOfSheets; i++) {
                 try {

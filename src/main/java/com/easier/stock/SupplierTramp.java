@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-public class SupplierTramp implements Supplier{
+public class SupplierTramp extends  Supplier implements iSupplier {
 
 
     public SupplierTramp() {
@@ -22,16 +22,11 @@ public class SupplierTramp implements Supplier{
         supplierBrends.add(Brend.DESTROYER);
     }
 
-    @Override
-    public List<String> getSupplierBrends() {
 
-        return supplierBrends;
-    }
 
     @Override
     public List createListStock(List<XSSFRow> data, List<Product> outerExisting) throws SQLException {
         List<Product> list = new ArrayList<>();
-        ProductsBarcodes productsBarcodes = new ProductsBarcodes();
 
         int productNameCell = 7;
         int barcodeCell = 4;
@@ -54,17 +49,9 @@ public class SupplierTramp implements Supplier{
                     product.setBrend(productBrend);
                 }
                 if(row.getCell(barcodeCell) != null && row.getCell(barcodeCell).getCellType() == HSSFCell.CELL_TYPE_STRING){
-                    String barcodeString = row.getCell(barcodeCell).toString();
-                    product.setBarcode(barcodeString);
-                    try {
-                        ResultSet rs = productsBarcodes.getProductCode(barcodeString);
-                        if(rs.next()) {
-                            String product_code = rs.getString("product_code").trim();
-                            product.setProductCode(product_code);
-                        }
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
+                    String barCodeString = row.getCell(barcodeCell).toString();
+                    product.setBarcode(barCodeString);
+                    product.setProductCode(getProductCode(barCodeString));
                 }
 
                 if(product.getBarcode().trim().equals("4743131038288")){

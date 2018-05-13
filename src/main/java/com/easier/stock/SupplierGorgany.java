@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-public class SupplierGorgany implements Supplier{
+public class SupplierGorgany extends Supplier implements iSupplier {
 
 
     public SupplierGorgany() {
@@ -33,16 +33,10 @@ public class SupplierGorgany implements Supplier{
         supplierBrends.add(Brend.ROCKTECHNOLOGIES);
     }
 
-    @Override
-    public List<String> getSupplierBrends() {
-
-        return supplierBrends;
-    }
 
     @Override
     public List createListStock(List<XSSFRow> data, List<Product> outerExisting) throws SQLException {
         List<Product> list = new ArrayList<>();
-        ProductsBarcodes productsBarcodes = new ProductsBarcodes();
 
         int productNameCell = 1;
         int barcodeCell = 7;
@@ -59,25 +53,13 @@ public class SupplierGorgany implements Supplier{
 
                 product.setBrend(getProductBrendFromCell(row, brendCell));
 
-                if(row.getCell(colorCell) != null && row.getCell(colorCell).getCellType() == HSSFCell.CELL_TYPE_STRING){
-                    String colorString = row.getCell(colorCell).toString();
-                    product.setColor(colorString);
-                }
                 product.setColor(getProductColorFromCell(row, colorCell));
 
                 if(row.getCell(vendorCodeCell) != null && row.getCell(vendorCodeCell).getCellType() == HSSFCell.CELL_TYPE_STRING){
 
                     String vendorCodeString = row.getCell(vendorCodeCell).toString();
                     product.setBarcode(vendorCodeString);
-                    try {
-                        ResultSet rs = productsBarcodes.getProductCode(vendorCodeString);
-                        if(rs.next()) {
-                            String product_code = rs.getString("product_code").trim();
-                            product.setProductCode(product_code);
-                        }
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
+                    product.setProductCode(getProductCode(vendorCodeString));
                 }
 
                 if(product.getBarcode().trim().equals("4743131038288")){
