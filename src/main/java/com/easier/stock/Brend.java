@@ -41,4 +41,25 @@ public interface Brend {
     String TREKSTA          = "Treksta";
     String DOLOMITE         = "Dolomite";
     String THE_NORTH_FACE   = "The North Face";
+
+    String TRAVEL_EXTREME   = "Travel Extreme";
+    String LOAP             = "Loap";
+    String FERRINO          = "Ferrino";
+    String KAMA             = "Kama";
+    String BCA              = "BCA";
+    String COMPRESSPORT     = "Compressport";
+    String CONTOUR          = "Contour";
+    String DIAMIR           = "Diamir";
+    String EDELWEISS        = "Edelweiss";
+    String FIRE_MAPLE       = "Fire-Maple";
+    String FIRST_ASCENT     = "First Ascent";
+    String FRITSCHI         = "Fritschi";
+    String GIPRON           = "Gipron";
+    String GREEN_HERMIT     = "Green Hermit";
+    String KOHLA            = "Kohla";
+    String SILVA            = "Silva";
+    String TACTICAL_EXTREME = "TacticalExtreme";
+
+    String MOUSSON          = "MOUSSON";
+    String ELEYUS           = "ELEYUS";
 }

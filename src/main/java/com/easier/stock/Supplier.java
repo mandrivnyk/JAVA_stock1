@@ -3,23 +3,62 @@ package com.easier.stock;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public class Supplier implements iSupplier {
+public abstract class Supplier implements iSupplier {
 
     enum Name {
-        TERRA_INCOGNITA,
-        GORGANY,
-        TRAMP,
-        SHAMBALA,
-        ELAN,
-        TRAVEL_EXTREME
+        TERRA_INCOGNITA{
+            public iSupplier create() {
+                return new SupplierTerraIncognita();
+            }
+        },
+        GORGANY {
+            public iSupplier create() {
+                return new SupplierGorgany();
+            }
+        },
+        TRAMP {
+            public iSupplier create() {
+                return new SupplierTramp();
+            }
+        },
+        SHAMBALA {
+            public iSupplier create() {
+                return null;
+            }
+        },
+        ELAN {
+            public iSupplier create() {
+                return new SupplierElan();
+            }
+        },
+        TRAVEL_EXTREME {
+            public iSupplier create() {
+                return new SupplierTE();
+            }
+        },
+        ELEYUS {
+            public iSupplier create() {
+                return new SupplierEleyus();
+            }
+        };
+
+        public static iSupplier create(String name) {
+            return  valueOf(name).create();
+        }
+
+        public abstract iSupplier create();
+
     }
 
+
+
     @Override
-    public List createListStock(List<XSSFRow> data, List<Product> outerExisting) throws SQLException {
+    public List createListStock(List<XSSFRow> data, List<Product> outerExisting) throws SQLException, UnsupportedEncodingException {
         return null;
     }
 
@@ -57,6 +96,8 @@ public class Supplier implements iSupplier {
         }
         return   attribute;
     }
+
+
 
     protected String getProductCode(String barCodeString) throws SQLException {
         ProductsBarcodes productsBarcodes = new ProductsBarcodes();

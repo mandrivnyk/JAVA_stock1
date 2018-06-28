@@ -3,6 +3,7 @@ package com.easier.stock;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -16,9 +17,6 @@ public class UpdaterFascade {
     public void InnerStock(String pathToInnerSkladFile)  throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException, IOException {
 
         List<XSSFRow> dataFromFile;
-
-//        GenProductsVariantsJSON genJson = new GenProductsVariantsJSON(pathToJsonFolder);
-
         ExcelParcer excelParcer = new ExcelParcer();
         int numberOfSheets = excelParcer.getNumberOfSheets(pathToInnerSkladFile);
 
@@ -36,7 +34,6 @@ public class UpdaterFascade {
             }
         }
 
-//        genJson.process();
     }
 
 
@@ -107,12 +104,22 @@ public class UpdaterFascade {
 
         ProductsVariants productsVariants = new ProductsVariants();
         productsVariants.save(outerStock);
+        saveNewProducts(outerStock);
+        //ProductInStock product
 
         ProductInStock.setInStockAll(0, 1000, nameSupplier);
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
     }
 
 
+
+    public void saveNewProducts(List<Product> products) throws SQLException, MalformedURLException {
+        for(Product product: products) {
+            if( product.isNew()) {
+               product.add();
+            }
+        }
+    }
 
 
 
@@ -128,17 +135,22 @@ public class UpdaterFascade {
 //                System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
 //            }
             if(rs.getInt("quantity") > 0) {
-                if(rs.getString("product_code").trim() == "TRT-106.04"){
+                if(rs.getString("product_code").trim().equals("A42")){ // eng
+                    System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
+                }
+                if(rs.getString("product_code").trim().equals("А42")){ // rus
                     System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
                 }
                 Product product = new ProductInStock();
                 String productCode = rs.getString("product_code").trim();
                 product.getProduct(productCode);
-
-
-                if(Integer.parseInt(rs.getString("sklad").trim()) == 2){
-                    product.setPriceRRZ(rs.getInt("price"));
+                if(rs.getString("product_code").trim() == "A42"){
+                    System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  outerStock ");
                 }
+
+//                if(Integer.parseInt(rs.getString("sklad").trim()) == 2){
+                    product.setPriceRRZ(rs.getInt("price"));
+//                }
 
                 product.setListPrice(0);
                 product.setInStock(inStockNum);

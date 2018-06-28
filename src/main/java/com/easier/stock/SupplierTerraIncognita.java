@@ -29,13 +29,13 @@ public class SupplierTerraIncognita extends Supplier implements iSupplier {
 
         int productNameCell = 0;
         int barcodeCell = 3;
-        int priceOptCell = 10;
-        int priceRRZCell = 11;
+        int priceOptCell = 9;
+        int priceRRZCell = 10;
         int inStockCell = 4;
 
 
         for (XSSFRow row : data) {
-            if(row != null && row.getCell(barcodeCell) != null && row.getCell(barcodeCell).getCellType() == HSSFCell.CELL_TYPE_NUMERIC && row.getCell(11) != null && row.getCell(11).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+            if(row != null && row.getCell(barcodeCell) != null && row.getCell(barcodeCell).getCellType() == HSSFCell.CELL_TYPE_NUMERIC && row.getCell(priceRRZCell) != null && row.getCell(priceRRZCell).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
                 Product product = new ProductInStock();
 
 
@@ -43,7 +43,8 @@ public class SupplierTerraIncognita extends Supplier implements iSupplier {
                 String barCodeString = getAttributeString(row, barcodeCell);
                 product.setBarcode(getAttributeString(row, barcodeCell));
                 product.setProductCode(getProductCode(barCodeString));
-                product.setInStock(getAttributelNumeric(row, inStockCell).intValue());
+
+
                 product.setPriceOpt(getAttributeDouble(row, priceOptCell));
                 product.setPriceRRZ(getAttributeDouble(row, priceRRZCell));
 
@@ -56,7 +57,12 @@ public class SupplierTerraIncognita extends Supplier implements iSupplier {
                         product.setSize(result.get(0).getMoreInfo());
                     }
                 }
-                list.add(product);
+
+                int inStock = getAttributelNumeric(row, inStockCell).intValue();
+                if(inStock > 0) {
+                    product.setInStock(inStock);
+                    list.add(product);
+                }
             }
         }
         return list;
@@ -74,7 +80,7 @@ public class SupplierTerraIncognita extends Supplier implements iSupplier {
         int colorCell = 1;
 
         for (XSSFRow row : data) {
-            if(row != null && row.getCell(3) != null && row.getCell(3).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
+            if(row != null && row.getCell(barcodeCell) != null && row.getCell(barcodeCell).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
                 Product product = new ProductInStock();
 
                 product.setName(getAttributeString(row, productNameCell));

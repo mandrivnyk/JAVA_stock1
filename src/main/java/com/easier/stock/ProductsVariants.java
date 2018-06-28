@@ -27,7 +27,7 @@ public class ProductsVariants {
 
     public  ResultSet getProductsVariantsUnique () throws SQLException {
         Statement st = conn.createStatement();
-        ResultSet rs = st.executeQuery("SELECT DISTINCT(product_code), producer, price, sklad, quantity, size, color, barcode   FROM SS_products_variants ORDER BY product_code ASC");
+        ResultSet rs = st.executeQuery("SELECT DISTINCT(product_code), producer, price, sklad, quantity, size, color, barcode   FROM SS_products_variants ORDER BY product_code ASC, sklad ASC");
         return rs;
     }
 
@@ -146,7 +146,7 @@ public class ProductsVariants {
 
     public void save(List<Product> stock ) throws SQLException {
         for (Product product:stock) {
-            if( product.getProductCode() != null && !product.getProductCode().isEmpty()) {
+            if( !product.isNew()) {
                 saveProductVariant(product);
             }
         }

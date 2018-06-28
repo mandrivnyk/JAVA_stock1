@@ -32,6 +32,15 @@ public class App {
         String pathToElanStock = pathToSkladFolder + "elan-rest.xlsx";
         String pathToElanExisting[] = {};
 
+        String pathToTEStock = pathToSkladFolder + "TE-rest.xlsx";
+        String pathToTEExisting[] = {pathToSkladFolder + barcodesString + "TE-barcodes.xlsx"};
+
+        String pathToEleyusStock = pathToSkladFolder + "Eleyus-rest.xlsx";
+        String pathToEleyusExisting[] = {};
+
+
+
+
         ProductsVariants productsVariants = new ProductsVariants();
         productsVariants.truncateProductsVariants();
 
@@ -43,16 +52,16 @@ public class App {
         UpdaterFascade updaterFascade = new UpdaterFascade();
         ProductsBarcodes productsBarcodes = new ProductsBarcodes();
         productsBarcodes.saveBarcodesFromProductsTable();
-        updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, Supplier.Name.TERRA_INCOGNITA.toString());
-        updaterFascade.saveOuterStock(pathToTrampStock, pathToTrampExisting, Supplier.Name.TRAMP.toString());
-        updaterFascade.saveOuterStock(pathToGorganyStock, pathToGorganyExisting, Supplier.Name.GORGANY.toString());
-        updaterFascade.saveOuterStock(pathToElanStock, pathToElanExisting, Supplier.Name.ELAN.toString());
+//        updaterFascade.saveOuterStock(pathToTerraIncognitaStock, pathToTerraIncognitaExisting, Supplier.Name.TERRA_INCOGNITA.toString());
+//        updaterFascade.saveOuterStock(pathToTrampStock, pathToTrampExisting, Supplier.Name.TRAMP.toString());
+//        updaterFascade.saveOuterStock(pathToGorganyStock, pathToGorganyExisting, Supplier.Name.GORGANY.toString());
+//        updaterFascade.saveOuterStock(pathToElanStock, pathToElanExisting, Supplier.Name.ELAN.toString());
+//        updaterFascade.saveOuterStock(pathToTEStock, pathToTEExisting, Supplier.Name.TRAVEL_EXTREME.toString());
+        updaterFascade.saveOuterStock(pathToEleyusStock, pathToEleyusExisting, Supplier.Name.ELEYUS.toString());
 
-        updaterFascade.InnerStock(pathToInnerSkladFile);
+//        updaterFascade.InnerStock(pathToInnerSkladFile);
         genJson.process();
         updaterFascade.updateProductsFromVariants(50, 1);
-
-        //        updaterFascade.UpdaterPriceLasting();
 
 
     }

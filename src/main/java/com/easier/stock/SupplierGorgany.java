@@ -39,7 +39,6 @@ public class SupplierGorgany extends Supplier implements iSupplier {
         List<Product> list = new ArrayList<>();
 
         int productNameCell = 1;
-        int barcodeCell = 7;
         int vendorCodeCell = 0;
         int priceOptCell = 5;
         int priceRRZCell = 2;
